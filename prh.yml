@@ -1,0 +1,17 @@
+version: 1
+imports:
+  - prh/ja/kanji-open.yml
+  - prh/ja/spoken.yml
+  - prh/ja/typo.yml
+  # - prh/ja/web+db.yml
+  - prh/css.yml
+  - prh/javascript.yml
+  - prh/other.yml
+  - prh/software.yml
+# rules:
+  # project configuration
+  # - expected: Almin
+  #   patterns: /almin.js/i
+
+# update prh submodule
+# git subtree pull --prefix=prh https://github.com/azu/prh.yml.git master --squash
