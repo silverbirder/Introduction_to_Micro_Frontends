@@ -1,0 +1,43 @@
+{
+  "author": "azu",
+  "license": "MIT",
+  "name": "@azu/prh.yml",
+  "description": "A collection of prh.yml",
+  "scripts": {
+    "test": "find . -name '*.yml' | egrep -v '.travis.yml' | egrep -v 'node_modules' | xargs -I{} $(npm bin)/prh --rules {} ./README.md > /dev/null",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "analyzeCommits": "semantic-release-default-major"
+  },
+  "main": "index.js",
+  "files": [
+    "**/*.yml"
+  ],
+  "keywords": [
+    "prh",
+    "textlint",
+    "yml",
+    "dict",
+    "dictionary"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/prh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azu/prh/issues"
+  },
+  "homepage": "https://github.com/azu/prh",
+  "devDependencies": {
+    "add-text-to-markdown": "^1.0.2",
+    "glob": "^7.1.1",
+    "prh": "^1.0.3",
+    "semantic-release": "^6.3.2",
+    "semantic-release-default-major": "^1.0.3"
+  },
+  "version": "2.1.2"
+}
