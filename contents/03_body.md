@@ -1,4 +1,4 @@
-# C
+# C {#id1}
 
 ```uml
 @startuml
@@ -15,4 +15,4 @@
 @enduml
 ```
 
-![sample](../assets/images/drawio/sample.png)
+![Sample](../assets/images/drawio/sample.png)

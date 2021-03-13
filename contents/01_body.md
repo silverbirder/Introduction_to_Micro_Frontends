@@ -1,6 +1,6 @@
-# A
+# A {#id1}
 
-## 書きたいことリスト
+## 書きたいことリスト {#id2}
 
 * フロントエンドアーキテクチャの歴史
 * ユーザーからのフロントエンドへの要求変化の歴史
@@ -16,4 +16,4 @@
   * Build-time Integration via components
   * Integration via iFrames
   * Serverside composition
-  * on k8s
+  * On k8s
