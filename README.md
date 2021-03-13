@@ -1,1 +1,5 @@
-# Introduction_to_Micro_Frontends
+# この資料について
+
+# 対象読者
+
+# 免責

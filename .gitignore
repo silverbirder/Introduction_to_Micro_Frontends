@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# honkit
+_book
+*.pdf
+*.epub
+assets/images/uml/*
