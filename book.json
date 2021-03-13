@@ -3,14 +3,13 @@
   "title": "マイクロフロントエンド入門",
   "description": "マイクロフロントエンドの入門書です。",
   "plugins": [
-    "anchors",
     "back-to-top-button",
+    "code",
     "collapsible-chapters",
     "expand-active-chapter",
     "hide-published-with",
     "intopic-toc",
     "image-captions",
-    "navigator",
     "uml"
   ],
   "pluginsConfig": {
