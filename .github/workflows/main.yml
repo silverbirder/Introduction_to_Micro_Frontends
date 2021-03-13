@@ -1,9 +1,8 @@
 name: Build and Deploy
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types: [closed]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
