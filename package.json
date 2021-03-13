@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "honkit serve",
-    "build:html": "honkit build",
+    "build": "honkit build",
     "build:pdf": "honkit pdf ./ ./book.pdf",
     "build:epub": "honkit epub ./ ./book.epub"
   },
@@ -23,7 +23,6 @@
     "gitbook-plugin-navigator": "^1.1.1",
     "gitbook-plugin-sunlight-highlighter": "^0.4.3",
     "gitbook-plugin-uml": "^1.2.6",
-    "honkit": "^3.6.17",
-    "svgexport": "^0.4.1"
+    "honkit": "^3.6.17"
   }
 }

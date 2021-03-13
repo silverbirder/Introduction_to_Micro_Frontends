@@ -11,17 +11,12 @@
     "intopic-toc",
     "image-captions",
     "navigator",
-    "-highlight",
-    "sunlight-highlighter",
     "uml"
   ],
   "pluginsConfig": {
     "image-captions": {
       "caption": "Fig. _BOOK_IMAGE_NUMBER_ _CAPTION_",
       "align": "center"
-    },
-    "sunlight-highlighter": {
-      "lineNumbers": true
     }
   },
   "styles": {
