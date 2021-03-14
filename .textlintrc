@@ -1,5 +1,14 @@
+// https://github.com/textlint/textlint/wiki/Collection-of-textlint-rule
+// https://github.com/textlint-rule
+// https://github.com/textlint-ja
 {
-  "filters": {},
+  "filters": {
+    // https://github.com/textlint/textlint-filter-rule-allowlist
+    "allowlist": {"allow": []},
+    "comments": true,
+    "ja-named-entities": true,
+    "node-types": {"nodeTypes": ["BlockQuote"]}
+  },
   "rules": {
     "@textlint-ja/no-synonyms": true,
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
@@ -19,13 +28,18 @@
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
     "ja-hiragana-keishikimeishi": true,
+    "ja-joyo-or-jinmeiyo-kanji": true,
+    "ja-kyoiku-kanji": true,
     "ja-no-abusage": true,
+    "ja-no-inappropriate-words": true,
     "ja-no-mixed-period": true,
     "ja-no-orthographic-variants": true,
     "ja-no-redundant-expression": true,
     "ja-no-successive-word": true,
     "ja-no-weak-phrase": true,
     "ja-unnatural-alphabet": true,
+    "jis-charset": true,
+    "joyo-kanji": true,
     "max-comma": true,
     "max-doc-width": true,
     "max-kanji-continuous-len": true,
@@ -41,6 +55,7 @@
     "no-empty-section": true,
     "no-exclamation-question-mark": {"allow": ["Yahoo!"]},
     "no-hankaku-kana": true,
+    "no-hoso-kinshi-yogo": true,
     "no-mix-dearu-desumasu": true,
     "no-mixed-zenkaku-and-hankaku-alphabet": true,
     "no-nfd": true,
@@ -51,14 +66,11 @@
     "preset-ja-technical-writing": true,
     "preset-japanese": true,
     "preset-jtf-style": true,
+    "prh": {"rulePaths": ["./prh.yml"]},
     "sentence-length": true,
     "spellcheck-tech-word": true,
     "terminology": true,
     "textlint-rule-max-appearence-count-of-words": true,
-    "prh": {
-      "rulePaths": [
-        "./prh.yml"
-      ]
-    }
+    "use-si-units": true
   }
 }
