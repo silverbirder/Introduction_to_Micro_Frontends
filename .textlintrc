@@ -8,24 +8,29 @@
     "@textlint-rule/no-unmatched-pair": true,
     "@textlint-rule/preset-google": true,
     "@textlint-rule/require-header-id": true,
+    "apostrophe": true,
+    "common-misspellings": true,
     "date-weekday-mismatch": true,
     "en-capitalization": true,
+    "en-max-word-count": true,
+    "first-sentence-length": true,
     "footnote-order": true,
+    "incremental-headers": true,
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-hiragana-keishikimeishi": true,
     "ja-no-abusage": true,
     "ja-no-mixed-period": true,
+    "ja-no-orthographic-variants": true,
     "ja-no-redundant-expression": true,
     "ja-no-successive-word": true,
     "ja-no-weak-phrase": true,
     "ja-unnatural-alphabet": true,
     "max-comma": true,
+    "max-doc-width": true,
     "max-kanji-continuous-len": true,
     "max-number-of-lines": true,
     "max-ten": true,
-    "no-exclamation-question-mark": {
-      "allow": [
-          "Yahoo!"
-      ]
-    },
     "no-dead-link": true,
     "no-double-negative-ja": true,
     "no-doubled-conjunction": true,
@@ -33,22 +38,23 @@
     "no-doubled-joshi": true,
     "no-dropping-the-ra": true,
     "no-duplicated-bunmatsu-hyougen": true,
+    "no-empty-section": true,
+    "no-exclamation-question-mark": {"allow": ["Yahoo!"]},
     "no-hankaku-kana": true,
     "no-mix-dearu-desumasu": true,
     "no-mixed-zenkaku-and-hankaku-alphabet": true,
     "no-nfd": true,
+    "no-surrogate-pair": true,
     "period-in-list-item": true,
     "prefer-tari-tari": true,
-    "preset-ja-spacing": {
-      "ja-space-between-half-and-full-width": {
-            "space": "always"
-        }
-    },
+    "preset-ja-spacing": {"ja-space-between-half-and-full-width": {"space": "always"}},
     "preset-ja-technical-writing": true,
-    "preset-japanese": true,    
+    "preset-japanese": true,
     "preset-jtf-style": true,
     "sentence-length": true,
     "spellcheck-tech-word": true,
+    "terminology": true,
+    "textlint-rule-max-appearence-count-of-words": true,
     "prh": {
       "rulePaths": [
         "./prh.yml"

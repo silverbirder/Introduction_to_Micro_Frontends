@@ -15,5 +15,6 @@
   * Runtime integration（client-side composition）
   * Build-time Integration via components
   * Integration via iFrames
-  * Serverside composition
+  * Server-side composition
   * On k8s
+  
