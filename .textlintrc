@@ -4,7 +4,9 @@
 {
   "filters": {
     // https://github.com/textlint/textlint-filter-rule-allowlist
-    "allowlist": {"allow": []},
+    "allowlist": {"allow": [
+      "jQuery",
+    ]},
     "comments": true,
     "ja-named-entities": true,
     "node-types": {"nodeTypes": ["BlockQuote"]}
@@ -29,7 +31,7 @@
     "ja-hiragana-hojodoushi": true,
     "ja-hiragana-keishikimeishi": true,
     "ja-joyo-or-jinmeiyo-kanji": true,
-    "ja-kyoiku-kanji": true,
+    "ja-kyoiku-kanji": false,
     "ja-no-abusage": true,
     "ja-no-inappropriate-words": true,
     "ja-no-mixed-period": true,
@@ -38,8 +40,8 @@
     "ja-no-successive-word": true,
     "ja-no-weak-phrase": true,
     "ja-unnatural-alphabet": true,
-    "jis-charset": true,
-    "joyo-kanji": true,
+    "jis-charset": false,
+    "joyo-kanji": false,
     "max-comma": true,
     "max-doc-width": true,
     "max-kanji-continuous-len": true,
@@ -62,7 +64,7 @@
     "no-surrogate-pair": true,
     "period-in-list-item": true,
     "prefer-tari-tari": true,
-    "preset-ja-spacing": {"ja-space-between-half-and-full-width": {"space": "always"}},
+    "preset-ja-spacing": true,
     "preset-ja-technical-writing": true,
     "preset-japanese": true,
     "preset-jtf-style": true,
