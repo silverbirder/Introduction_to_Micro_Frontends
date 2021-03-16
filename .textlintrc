@@ -7,7 +7,7 @@
     "allowlist": {"allow": [
       "jQuery",
     ]},
-    "comments": true,
+    "comments": false,
     "ja-named-entities": true,
     "node-types": {"nodeTypes": ["BlockQuote"]}
   },
