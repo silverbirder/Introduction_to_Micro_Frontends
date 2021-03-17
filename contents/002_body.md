@@ -1,2 +1,0 @@
-# マイクロフロントエンド {#micro-frontends}
-
