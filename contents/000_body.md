@@ -45,3 +45,12 @@ APIを呼び出して、UIようデータを編集しクライアントに返却
 モジュラモノリス、エンタープライズアーキテクチャ、ヘキサゴナルアーキテクチャのように
 アプリケーション内部での設計方法はある。が、アプリケーションは、1つのサーバだけにあると。
 リクエストボトルネックとなり、スケールする柔軟性が欠ける。
+
+http://www.developer-cheatsheets.com/history.html
+http://softwarephilosophy.ninja/evolution-of-front-end-architecture
+https://blog.logrocket.com/history-of-frontend-frameworks/
+https://dev.to/_adam_barker/the-super-brief-history-of-javascript-frameworks-for-those-somewhat-interested-3m82
+https://blog.webf.zone/contemporary-front-end-architectures-fb5b500b0231
+https://speakerdeck.com/initfabian/a-brief-history-of-front-end-frameworks
+https://github.com/mraible/history-of-web-frameworks-timeline
+https://digitalidentity.co.jp/blog/creative/mvc-mvvm.html
