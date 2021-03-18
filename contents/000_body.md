@@ -54,3 +54,6 @@ https://blog.webf.zone/contemporary-front-end-architectures-fb5b500b0231
 https://speakerdeck.com/initfabian/a-brief-history-of-front-end-frameworks
 https://github.com/mraible/history-of-web-frameworks-timeline
 https://digitalidentity.co.jp/blog/creative/mvc-mvvm.html
+
+grpc-web
+初期は、PCだったけど、iPhoneが流行ってモバイルWebサイトが流行る。
