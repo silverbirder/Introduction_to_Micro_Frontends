@@ -47,7 +47,7 @@
     "max-kanji-continuous-len": true,
     "max-number-of-lines": true,
     "max-ten": true,
-    "no-dead-link": true,
+    "no-dead-link": false,
     "no-double-negative-ja": true,
     "no-doubled-conjunction": true,
     "no-doubled-conjunctive-particle-ga": true,

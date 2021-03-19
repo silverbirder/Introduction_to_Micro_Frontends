@@ -1,17 +1,17 @@
-# Summary
+# Summary {#summary}
 
-## 序文
+## 序文 {#first}
 
 * [この資料について](README.md)
   * [対象読者](README.md#対象読者)
   * [免責](README.md#免責)
 
-## 本文
+## 本文 {#body}
 
-* [1. フロントエンドの歴史](contents/01_body.md)
-* [2. マイクロフロントエンドの組成パターン](contents/02_body.md)
-* [3. マイクロフロントエンドの構築例](contents/03_body.md)
+* [1. Web技術における標準化の歴史](contents/01_history_of_web_standardization.md)
+* [2. フロントエンドソフトウェアの歴史](contents/02_history_of_frontend_software.md)
+* [3. Webシステムアーキテクチャの歴史](contents/03_history_of_web_system_architecture.md)
 
-## 結文
+## 結文 {#post}
 
 * [おわりに](contents/postscript.md)
