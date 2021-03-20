@@ -8,15 +8,15 @@ Webの始まりは、1960年代からとなる。
 ![01_history_of_web_standardization_1](../assets/images/drawio/01_history_of_web_standardization_1.png)
 
 [1991年、HTMLが誕生](https://en.wikipedia.org/wiki/HTML)する。
-その当時、WebサーバからHTMLをHTTP通信で返却するだけの構成だった。
+当時のWebは、WebサーバからHTMLをHTTP通信で返却するだけの構成だった。
 
 [1993年、Common Gate Interface（CGI）が誕生](https://en.wikipedia.org/wiki/Common_Gateway_Interface)する。
 CGIにより、ブラウザの要求をソフトウェアで処理できるようになった。
-結果、純粋にHTMLを返却していたところが、動的に処理したHTMLを返却できるため、より高度なコンテンツを提供できる。
-CGIよりもっとも普及したのが、PHPの存在だ。
+結果、純粋にHTMLを返却していたところが、動的に処理したHTMLを返却でき、より高度なコンテンツの提供が可能となる。
+CGIでもっとも普及したのが、PHPだ。
 
 [1994年、CSSが誕生](https://en.wikipedia.org/wiki/CSS#Difficulty_with_adoption)した。
-1994年以前は、HTMLのレイアウトは実現できていたが、HTMLの構造とレイヤウトを分離できていなかった。
+1994年以前は、ドキュメントのレイアウトは実現できていたが、ドキュメントの構造とレイアウトを分離できていなかった。
 [カスケードスタイルであるCSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)を使い、その問題を解消した。
 
 [1995年、Javascript（旧：LiveScript）が誕生](https://en.wikipedia.org/wiki/JavaScript)した。
