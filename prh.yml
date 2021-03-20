@@ -9,7 +9,7 @@ imports:
   - prh/other.yml
   - prh/software.yml
   - rules/media/techbooster.yml
-  - rules/media/WEB+DB_PRESS.yml
+  # - rules/media/WEB+DB_PRESS.yml
 # rules:
   # project configuration
   # - expected: Almin
