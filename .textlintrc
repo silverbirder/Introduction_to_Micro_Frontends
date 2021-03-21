@@ -72,7 +72,7 @@
     "sentence-length": true,
     "spellcheck-tech-word": true,
     "terminology": true,
-    "textlint-rule-max-appearence-count-of-words": true,
+    "textlint-rule-max-appearence-count-of-words": false,
     "use-si-units": true
   }
 }

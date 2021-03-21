@@ -51,3 +51,15 @@ GraphQLは、API向けのクエリ言語である。
 
 ![02_history_of_frontend_software_3](../assets/images/drawio/02_history_of_frontend_software_3.png)
 
+PWA、AMP両方に関係するキーワード『モバイルファースト』がある。
+2007年にiPhoneが販売され、モバイル端末でWebへアクセスできるようになる。
+デスクトップ、タブレット、モバイルとさまざまな端末に対応するため、2012年にレスポンシブデザインが可能となる。
+所謂、[メディアクエリ](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)である。
+2019年の第1四半期では、モバイルデバイス（タブレットを除く）は世界のWebサイトトラフィックの48.71％というデータがある。
+詳しくは、[こちら](https://www.statista.com/statistics/271405/global-mobile-data-traffic-forecast/)を参照。
+2020年近年では、Core Web Vitalsというモバイルフレンドリーを評価するための指標も発表されている。
+
+話を戻す。
+[2015年、AMPが誕生](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages)した。
+
+[同年、PWAが誕生](https://en.wikipedia.org/wiki/Progressive_web_application)した。
