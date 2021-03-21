@@ -25,8 +25,20 @@ AngularJSから、AngularJS2への移行に互換性がないため、Angularユ
 
 [2012年、Bowerが誕生](https://github.com/bower/bower/blob/master/CHANGELOG.md)した。
 Bowerは、フロントエンドにおけるパッケージマネージャーを管理する。
-執筆当時（2021年3月時点）のBower公式によると、YarnやWebpackを使用することをお勧めされている。
+執筆当時（2021年3月時点）のBower公式によると、YarnやWebpackの使用をお勧めされている。
 
 [2013年、Reactが誕生](https://en.wikipedia.org/wiki/React_%28JavaScript_library%29)した。
+仮想DOMや、一方向データフロー、Fluxといった機能が登場した。
+これらは、従来のフロントエンド開発におけるデータバインディングの課題を解決する。
+仮想DOMによって、データ更新に伴うレンダリングが差分更新となり、パフォーマンスが向上する。
+Fluxによって、状態は唯一の情報源として扱い、一方向データフローを管理できるようになった。
+
+[2014年、Vue.jsが誕生](https://en.wikipedia.org/wiki/Vue.js)した。
+GoogleでAngularJSを使用していたEvan Youによって、Vue.jsが開発された。
+それには、プログレッシブフレームワークという特性があり、段階的に導入できるメリットがある。
+React.jsとは違い、それはコンポーネントに焦点があたっている。
+そのため、コアライブラリは、コンポーネントに関するもので、ルーティングや状態管理はサポートライブラリと区分けされている。
+
+[2015年、Reduxが誕生](https://en.wikipedia.org/wiki/Redux_%28JavaScript_library%29)した。
 
 ![02_history_of_frontend_software_3](../assets/images/drawio/02_history_of_frontend_software_3.png)
