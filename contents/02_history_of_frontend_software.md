@@ -40,5 +40,14 @@ React.jsとは違い、それはコンポーネントに焦点があたってい
 そのため、コアライブラリは、コンポーネントに関するもので、ルーティングや状態管理はサポートライブラリと区分けされている。
 
 [2015年、Reduxが誕生](https://en.wikipedia.org/wiki/Redux_%28JavaScript_library%29)した。
+Fluxアーキテクチャの影響により、状態管理のライブラリとしてReduxが生まれた。
+Reactから切り離されているため、他のライブラリでも使用可能となる。
+また、Reduxの影響により、Angularはngrx、Vue.jsはVuexというライブラリが派生する。
+
+[同年、GraphQLが誕生](https://en.wikipedia.org/wiki/GraphQL)した。
+GraphQLは、API向けのクエリ言語である。
+クライアント側から要求するデータ構造を定義できるため、サーバ側は必要以上のデータを返却しなくて済む。
+そのような柔軟性は、多種多様なデータをもつサービスには効果的である。
 
 ![02_history_of_frontend_software_3](../assets/images/drawio/02_history_of_frontend_software_3.png)
+
