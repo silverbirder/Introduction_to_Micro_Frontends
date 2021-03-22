@@ -33,6 +33,13 @@ Bowerは、フロントエンドにおけるパッケージマネージャーを
 仮想DOMによって、データ更新に伴うレンダリングが差分更新となり、パフォーマンスが向上する。
 Fluxによって、状態は唯一の情報源として扱い、一方向データフローを管理できるようになった。
 
+[同年、Hugoが誕生](https://en.wikipedia.org/wiki/Hugo_%28software%29)した。
+Hugoは、Go製のSSG（Static Site Generators）。
+次の2つの特徴をもつ。
+
+* 生成する元データは、HTMLだけでなくMarkdownもサポート
+* i18n（internationalization and localization）をサポート
+
 [2014年、Vue.jsが誕生](https://en.wikipedia.org/wiki/Vue.js)した。
 GoogleでAngularJSを使用していたEvan Youによって、Vue.jsが開発された。
 それには、プログレッシブフレームワークという特性があり、段階的に導入できるメリットがある。
@@ -51,15 +58,32 @@ GraphQLは、API向けのクエリ言語である。
 
 ![02_history_of_frontend_software_3](../assets/images/drawio/02_history_of_frontend_software_3.png)
 
-PWA、AMP両方に関係するキーワード『モバイルファースト』がある。
+[2015年、AMPが誕生](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages)した。
+AMP（Accelerated Mobile Pages）は、モバイルページのブラウジング最適化がされ、ページ読み込みの高速化を目的とする。
+[2015年にAMP](https://blog.google/products/search/introducing-accelerated-mobile-pages/)が発表される。
+[翌年、Googleモバイル検索結果](https://blog.amp.dev/2016/02/24/amping-up-in-google-search/)へ表示されるようになる。
+
+[2015年、PWAが誕生](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)した。
+PWA（Progressive Web Apps）は、ネイティブアプリと同様のユーザ体験をWebアプリにも拡張する。
+これにより、ネイティブアプリとWebアプリの境界がなくなりつつある。
+
+PWA、AMPの両方に関係するキーワード『モバイルファースト』がある。
 2007年にiPhoneが販売され、モバイル端末でWebへアクセスできるようになる。
 デスクトップ、タブレット、モバイルとさまざまな端末に対応するため、2012年にレスポンシブデザインが可能となる。
-所謂、[メディアクエリ](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)である。
+[メディアクエリ](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)である。
 2019年の第1四半期では、モバイルデバイス（タブレットを除く）は世界のWebサイトトラフィックの48.71％というデータがある。
 詳しくは、[こちら](https://www.statista.com/statistics/271405/global-mobile-data-traffic-forecast/)を参照。
 2020年近年では、Core Web Vitalsというモバイルフレンドリーを評価するための指標も発表されている。
 
-話を戻す。
-[2015年、AMPが誕生](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages)した。
+[2017年、Gatsbyが誕生](https://github.com/gatsbyjs/gatsby)する。
+Gatsbyは、Reactを使ってWebサイトやWebアプリを高速に構築できる。
+Reactの機能を完全にサポートしているため、SSGだけではなく動的なコンテンツも提供できる。
+また、このライブラリからJAMStackという考え方が話題になる。
+JAMStackは、WebアプリやWebサイトを構築するアーキテクチャである。
+JAMは、Javascript、API、Markupの頭文字を取っている。
+Wordpressのようにデータベース参照しないため、フロントエンドとバックエンドを明確に分離できる。
 
-[同年、PWAが誕生](https://en.wikipedia.org/wiki/Progressive_web_application)した。
+[2018年、Denoが誕生](https://en.wikipedia.org/wiki/Deno_%28software%29)する。
+Node.js開発者であるライアン・ダールより、[Node.jsに関する10の反省点](https://www.youtube.com/watch?v=M3BM9TB-8yA)という発表があった。
+それら反省点より改善されたDenoが生まれた。
+特にセキュリティや生産性の面に改善されているようだ。
