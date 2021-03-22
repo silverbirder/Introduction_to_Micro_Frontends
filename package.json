@@ -16,6 +16,7 @@
     "gitbook-plugin-back-to-top-button": "^0.1.4",
     "gitbook-plugin-code": "^0.1.0",
     "gitbook-plugin-collapsible-chapters": "^0.1.8",
+    "gitbook-plugin-edit-link-plus": "^0.1.1",
     "gitbook-plugin-expand-active-chapter": "^1.0.0",
     "gitbook-plugin-hide-published-with": "0.0.1",
     "gitbook-plugin-image-captions": "^3.1.0",

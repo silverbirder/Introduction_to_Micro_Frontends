@@ -10,12 +10,16 @@
     "hide-published-with",
     "intopic-toc",
     "image-captions",
-    "uml"
+    "uml",
+    "edit-link-plus"
   ],
   "pluginsConfig": {
     "image-captions": {
       "caption": "Fig. _BOOK_IMAGE_NUMBER_ _CAPTION_",
       "align": "center"
+    },
+    "edit-link-plus": {
+      "base": "https://github.com/Silver-birder/Introduction_to_Micro_Frontends/edit/main/"
     }
   },
   "styles": {
