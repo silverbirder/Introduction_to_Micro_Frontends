@@ -5,7 +5,7 @@ Webの始まりは、1960年代からとなる。
 インターネットにより、世界中のネットワークが相互接続されることになる。
 その結果、HTMLなどのハイパーテキストが世界中でつながるようになり、Webという基盤が誕生する。
 
-![01_history_of_web_standardization_1](../../assets/images/drawio/01_history_of_web_standardization_1.png)
+![01_history_of_web_standardization_1](../../assets/images/drawio/history/01_history_of_web_standardization_1.png)
 
 [1991年、HTMLが誕生](https://en.wikipedia.org/wiki/HTML)する。
 当時のWebは、WebサーバからHTMLをHTTP通信で返却するだけの構成だった。
@@ -23,7 +23,7 @@ CGIでもっとも普及したのが、PHPだ。
 Javascriptにより、ブラウザはHTMLをロードするだけから、動作まで付与できるようになった。
 NetscapeとMicrosoftによる[ブラウザ戦争](https://en.wikipedia.org/wiki/Browser_war)が勃発した。
 
-![01_history_of_web_standardization_2](../../assets/images/drawio/01_history_of_web_standardization_2.png)
+![01_history_of_web_standardization_2](../../assets/images/drawio/history/01_history_of_web_standardization_2.png)
 
 [2002年、XMLHttpRequestが誕生](https://en.wikipedia.org/wiki/XMLHttpRequest)した。
 XMLHttpRequestにより、ブラウザからサーバへデータの要求を行えるようになった。
@@ -35,7 +35,7 @@ XMLHttpRequestにより、ブラウザからサーバへデータの要求を行
 SOAPは、WS-*と呼ばれるプロトコルの複雑さがあったため、評判が悪かった。
 SOAPに比べてRESTは、シンプルな設計であったため、APIの主流となった。
 
-![01_history_of_web_standardization_3](../../assets/images/drawio/01_history_of_web_standardization_3.png)
+![01_history_of_web_standardization_3](../../assets/images/drawio/history/01_history_of_web_standardization_3.png)
 
 [2005年、Ajaxが誕生](https://en.wikipedia.org/wiki/Ajax_%28programming%29)した。
 Ajax（Asynchronous JavaScript And XML）は、その名のとおりJavascriptから非同期にXMLデータの送受信を行うことだ。
