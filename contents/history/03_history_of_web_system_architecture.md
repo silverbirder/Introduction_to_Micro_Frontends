@@ -1,11 +1,11 @@
 # Webシステムアーキテクチャの歴史[私見] {#history-of-Web-system-architecture}
 
-![03_history_of_web_system_architecture_1](../assets/images/drawio/03_history_of_web_system_architecture_1.png)
+![03_history_of_web_system_architecture_1](../../assets/images/drawio/03_history_of_web_system_architecture_1.png)
 
 BrowserとServerだけの構成というシンプルなWebシステムアーキテクチャだ。
 Serverから静的コンテンツを返すだけや、CGIを使った動的コンテンツを返すこともできる。
 
-![03_history_of_web_system_architecture_2](../assets/images/drawio/03_history_of_web_system_architecture_2.png)
+![03_history_of_web_system_architecture_2](../../assets/images/drawio/03_history_of_web_system_architecture_2.png)
 
 データベースが登場。
 Serverから直接データベースを参照する構成や、データベースからAPIを提供する構成がある。
@@ -17,7 +17,7 @@ Serverから直接データベースを参照する構成や、データベー�
 しかし、キャッシュは麻酔であり、多用は厳禁である。なぜなら、さまざまな副作用があるからだ。
 副作用の1つに、データ鮮度の低下が見込まれる。キャッシュは用法用量を守ることが大切だ。
 
-![03_history_of_web_system_architecture_3](../assets/images/drawio/03_history_of_web_system_architecture_3.png)
+![03_history_of_web_system_architecture_3](../../assets/images/drawio/03_history_of_web_system_architecture_3.png)
 
 ---- 
 
@@ -113,7 +113,8 @@ Unixの哲学にあるように『ただ1つのことをして、それをうま
 * パフォーマンスが不安定
   * 外部通信が頻繁に行われるため
 
-![03_history_of_web_system_architecture_4](../assets/images/drawio/03_history_of_web_system_architecture_4.png)
+![03_history_of_web_system_architecture_4](../../assets/images/drawio/03_history_of_web_system_architecture_4.png)
 
 そして、次がマイクロフロントエンドだ。簡単に説明すると、
 マイクロサービスの考えをフロントエンドにも拡張したアーキテクチャだ。
+これは、別のページで紹介する。

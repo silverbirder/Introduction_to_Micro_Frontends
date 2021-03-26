@@ -15,4 +15,4 @@
 @enduml
 ```
 
-![Sample](../assets/images/drawio/sample.png)
+![Sample](../../assets/images/drawio/sample.png)

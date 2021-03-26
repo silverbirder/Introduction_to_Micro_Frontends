@@ -8,9 +8,12 @@
 
 ## 本文 {#body}
 
-* [Web技術における標準化の歴史](contents/01_history_of_web_standardization.md)
-* [フロントエンドソフトウェアの歴史](contents/02_history_of_frontend_software.md)
-* [Webシステムアーキテクチャの歴史](contents/03_history_of_web_system_architecture.md)
+* 歴史
+  * [Web技術における標準化の歴史](contents/history/01_history_of_web_standardization.md)
+  * [フロントエンドソフトウェアの歴史](contents/history/02_history_of_frontend_software.md)
+  * [Webシステムアーキテクチャの歴史](contents/history/03_history_of_web_system_architecture.md)
+* マイクロフロントエンド
+  * [マイクロフロントエンドの概要](contents/microfrontends/10_overview_of_micro_frontends.md)
 
 ## 結文 {#post}
 
