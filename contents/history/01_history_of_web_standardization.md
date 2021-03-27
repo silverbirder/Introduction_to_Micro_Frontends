@@ -12,7 +12,7 @@ Webの始まりは、1960年代からとなる。
 
 [1993年、Common Gate Interface（CGI）が誕生](https://en.wikipedia.org/wiki/Common_Gateway_Interface)する。
 CGIにより、ブラウザの要求をソフトウェアで処理できるようになった。
-結果、純粋にHTMLを返却していたところが、動的に処理したHTMLを返却でき、より高度なコンテンツの提供が可能となる。
+結果、純粋にHTMLを返却していたところが、動的に処理したHTMLを返却できるようになり、より高度なコンテンツの提供が可能となる。
 CGIでもっとも普及したのが、PHPだ。
 
 [1994年、CSSが誕生](https://en.wikipedia.org/wiki/CSS#Difficulty_with_adoption)した。

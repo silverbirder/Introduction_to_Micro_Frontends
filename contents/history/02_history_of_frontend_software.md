@@ -34,11 +34,13 @@ Bowerは、フロントエンドにおけるパッケージマネージャーを
 Fluxによって、状態は唯一の情報源として扱い、一方向データフローを管理できるようになった。
 
 [同年、Hugoが誕生](https://en.wikipedia.org/wiki/Hugo_%28software%29)した。
-Hugoは、Go製のSSG（Static Site Generators）。
+Hugoは、Go製のSSG（Static Site Generators）である。
 次の2つの特徴をもつ。
 
 * 生成する元データは、HTMLだけでなくMarkdownもサポート
 * i18n（internationalization and localization）をサポート
+
+手軽に、かつ素早く静的コンテンツを生成できるようになり、[様々な形態](https://gohugo.io/showcase/)に活用された。
 
 [2014年、Vue.jsが誕生](https://en.wikipedia.org/wiki/Vue.js)した。
 GoogleでAngularJSを使用していたEvan Youによって、Vue.jsが開発された。
