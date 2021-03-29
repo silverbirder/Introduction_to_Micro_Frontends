@@ -1,4 +1,5 @@
 # Web技術における標準化の歴史 {#history-of-Web-standardization}
+## 1960年~1995年 {#1960-1995}
 
 Webの始まりは、1960年代からとなる。
 [インターネット](https://en.wikipedia.org/wiki/History_of_the_Internet)の誕生だ。
@@ -23,6 +24,8 @@ CGIでもっとも普及したのが、PHPだ。
 Javascriptにより、ブラウザはHTMLをロードするだけから、動作まで付与できるようになった。
 NetscapeとMicrosoftによる[ブラウザ戦争](https://en.wikipedia.org/wiki/Browser_war)が勃発した。
 
+## 2002年 {#2002}
+
 ![01_history_of_web_standardization_2](../../assets/images/drawio/history/01_history_of_web_standardization_2.png)
 
 [2002年、XMLHttpRequestが誕生](https://en.wikipedia.org/wiki/XMLHttpRequest)した。
@@ -34,6 +37,8 @@ XMLHttpRequestにより、ブラウザからサーバへデータの要求を行
 
 SOAPは、WS-*と呼ばれるプロトコルの複雑さがあったため、評判が悪かった。
 SOAPに比べてRESTは、シンプルな設計であったため、APIの主流となった。
+
+## 2005年 {#2005}
 
 ![01_history_of_web_standardization_3](../../assets/images/drawio/history/01_history_of_web_standardization_3.png)
 

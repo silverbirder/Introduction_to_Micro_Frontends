@@ -1,10 +1,11 @@
 # Webシステムアーキテクチャの歴史[私見] {#history-of-Web-system-architecture}
-
+## ブラウザ~サーバ {#browser-server}
 ![03_history_of_web_system_architecture_1](../../assets/images/drawio/history/03_history_of_web_system_architecture_1.png)
 
 BrowserとServerだけの構成というシンプルなWebシステムアーキテクチャだ。
 Serverから静的コンテンツを返すだけや、CGIを使った動的コンテンツを返すこともできる。
 
+## ブラウザ~サーバ~DB {#browser-server-db}
 ![03_history_of_web_system_architecture_2](../../assets/images/drawio/history/03_history_of_web_system_architecture_2.png)
 
 データベースが登場。
@@ -17,9 +18,10 @@ Serverから直接データベースを参照する構成や、データベー�
 しかし、キャッシュは麻酔であり、多用は厳禁である。なぜなら、さまざまな副作用があるからだ。
 副作用の1つに、データ鮮度の低下が見込まれる。キャッシュは用法用量を守ることが大切だ。
 
+## ブラウザ~サーバ~DB {#browser-server-db}
 ![03_history_of_web_system_architecture_3](../../assets/images/drawio/history/03_history_of_web_system_architecture_3.png)
 
----- 
+### BFF {#bff}
 
 APIが複数登場すると、APIをまとめるレイヤが必要となる。
 そこで、**[BFF（Backend For Frontends）](https://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html)** というレイヤが登場する。
@@ -37,7 +39,7 @@ BFFの機能例として、データをフロントエンド向けに加工し�
 ブラウザからBFFまでをフロントエンドとし、BFFより後ろをバックエンドとする。
 BFFにより、フロントエンドとバックエンドの境界が明確になる。
 
----- 
+### Microservices {#microservices}
 
 バックエンドは、 **[マイクロサービス化](https://martinfowler.com/articles/microservices.html)** に進むケースがある。
 
@@ -113,6 +115,7 @@ Unixの哲学にあるように『ただ1つのことをして、それをうま
 * パフォーマンスが不安定
   * 外部通信が頻繁に行われるため
 
+## Micro Frontends {#micro-frontends}
 ![03_history_of_web_system_architecture_4](../../assets/images/drawio/history/03_history_of_web_system_architecture_4.png)
 
 そして、次がマイクロフロントエンドだ。簡単に説明すると、
