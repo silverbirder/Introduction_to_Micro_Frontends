@@ -21,6 +21,7 @@
     "gitbook-plugin-hide-published-with": "0.0.1",
     "gitbook-plugin-image-captions": "^3.1.0",
     "gitbook-plugin-intopic-toc": "^1.1.1",
+    "gitbook-plugin-meta-single": "^0.1.13",
     "gitbook-plugin-uml": "^1.2.6",
     "honkit": "^3.6.17"
   },

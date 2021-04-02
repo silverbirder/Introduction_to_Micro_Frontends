@@ -11,7 +11,8 @@
     "intopic-toc",
     "image-captions",
     "uml",
-    "edit-link-plus"
+    "edit-link-plus",
+    "meta-single"
   ],
   "pluginsConfig": {
     "image-captions": {
@@ -20,6 +21,10 @@
     },
     "edit-link-plus": {
       "base": "https://github.com/Silver-birder/Introduction_to_Micro_Frontends/edit/main/"
+    },
+    "meta-single": {
+      "name": "google-site-verification",
+      "content": "s2OnYR9teMjejGbYLSDNPDaodK1kecGGlN76ZPZdS8c"
     }
   },
   "styles": {
