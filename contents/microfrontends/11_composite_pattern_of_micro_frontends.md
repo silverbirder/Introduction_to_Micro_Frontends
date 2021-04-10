@@ -1,6 +1,12 @@
 # マイクロフロントエンドの組成パターン {#composite-pattern-of-micro-frontends}
 
-本章では、マイクロフロントエンドの組成パターンについて紹介する。
+本章では、実際にマイクロフロントエンドを構築する際の組成パターンについて紹介する。
+
+## 前提 {#premise}
+
+1つのECサイトを3つのチームでアプリケーション開発する想定とする。
+
+![premise-micro-frontends](../../assets/images/drawio/microfrontends/premise-micro-frontends.png)
 
 ## Build-time組成パターン {#build-time-composition}
 
