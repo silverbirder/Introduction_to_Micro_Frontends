@@ -1,6 +1,6 @@
 # クライアントサイド組成 - チュートリアル {#client-side-composition-tutorial}
 
-あいうえお。
+![client_side_composition_tutorial](../../assets/images/drawio/tutorial/client_side_composition_tutorial.png)
 
 ```html
 <!-- team-composite/index.html -->

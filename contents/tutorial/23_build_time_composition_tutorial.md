@@ -1,5 +1,7 @@
 # ビルドタイム組成 - チュートリアル {#build-time-composition-tutorial}
 
+![build_time_composition_tutorial](../../assets/images/drawio/tutorial/build_time_composition_tutorial.png)
+
 ```html
 <!-- team_composite/public/index.html -->
 <div id="root"></div>

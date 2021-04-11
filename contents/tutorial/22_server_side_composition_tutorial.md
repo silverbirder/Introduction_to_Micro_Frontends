@@ -1,5 +1,6 @@
 # サーバーサイド組成 - チュートリアル {#server-side-composition-tutorial}
 
+![server_side_composition_tutorial](../../assets/images/drawio/tutorial/server_side_composition_tutorial.png)
 
 ```javascript
 // team_composite/serve.js
