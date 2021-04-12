@@ -1,11 +1,18 @@
 # ビルドタイム組成 - チュートリアル {#build-time-composition-tutorial}
 
+　ビルドタイム組成は、次のような構成図を想定する。
+
 ![build_time_composition_tutorial](../../assets/images/drawio/tutorial/build_time_composition_tutorial.png)
+
+先に、組成している部分を紹介する。
+まず、次のようなHTMLを使う。
 
 ```html
 <!-- team_composite/public/index.html -->
 <div id="root"></div>
 ```
+
+次に、`#root` に対して `ReactDOM.render` を実行する。
 
 ```javascript
 // team-composite/src/index.js
@@ -21,6 +28,8 @@ ReactDOM.render(
 );
 ```
 
+そのレンダリングで、`App.js` というものがある。
+
 ```javascript
 // team_composite/src/App.js
 import TeamSearchText from '@bit/silver-birder.micro-frontends-sample-collections.team-search-text'
@@ -34,6 +43,9 @@ function App() {
 }
 export default App;
 ```
+
+こちらにあるとおり、`App.js` には `@bit/silver-birder.*` というモジュールをimportしている。
+そのモジュールは、次のようなものである。
 
 ```javascript
 // team_search/src/components/team-search-text/index.js
@@ -49,3 +61,5 @@ export default class TeamSearchText extends Component {
     }
 }
 ```
+
+このコードは、[bit.dev](https://bit.dev/)でprivateに公開している。

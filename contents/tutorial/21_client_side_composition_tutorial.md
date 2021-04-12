@@ -1,17 +1,28 @@
 # クライアントサイド組成 - チュートリアル {#client-side-composition-tutorial}
 
+クライアントサイド組成は、次のような構成図を想定する。
+
 ![client_side_composition_tutorial](../../assets/images/drawio/tutorial/client_side_composition_tutorial.png)
+
+先に、組成している部分を紹介する。
 
 ```html
 <!-- team-composite/index.html -->
-<team-search-text .title="Text"></team-search-text>
 <script type="module" src="./search/team-search-text.js" defer></script>
+<team-search-text .title="Text"></team-search-text>
 ```
 
+このように、Search Teamから提供されるカスタム要素モジュールを読み込む。
+カスタム要素モジュールは、次のようなコードになる。
+
 ```javascript
-// team-search-text/index.js
-export { TeamSearchText } from './src/TeamSearchText.js';
+// team-search-text/team-search-text.js
+import { TeamSearchText } from './src/TeamSearchText.js';
+window.customElements.define('team-search-text', TeamSearchText);
 ```
+
+team-search-textと呼ばれるカスタム要素を定義している。
+team-search-textの詳細は、次のとおりである。
 
 ```javascript
 // team-search-text/src/TeamSearchText.js
@@ -32,4 +43,3 @@ export class TeamSearchText extends LitElement {
   }
 }
 ```
-
