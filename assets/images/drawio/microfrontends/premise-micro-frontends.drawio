@@ -1,11 +1,14 @@
 <mxfile>
     <diagram id="B9imWvU3-mCyOA17thxm" name="Page-1">
-        <mxGraphModel dx="2104" dy="1608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1052" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="24" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+                <mxCell id="43" value="" style="group" vertex="1" connectable="0" parent="1">
                     <mxGeometry y="10" width="850" height="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="43">
+                    <mxGeometry width="850" height="630" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;dashed=1;fillColor=none;" vertex="1" parent="24">
                     <mxGeometry x="50" y="230" width="540" height="320" as="geometry"/>
@@ -55,8 +58,8 @@
                 <mxCell id="40" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px&quot;&gt;Inspire Team&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="24">
                     <mxGeometry x="652" y="570" width="150" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;dashed=1;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="660" y="150" width="180" height="420" as="geometry"/>
+                <mxCell id="41" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=4;dashed=1;fillColor=none;" vertex="1" parent="43">
+                    <mxGeometry x="660" y="140" width="180" height="420" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
