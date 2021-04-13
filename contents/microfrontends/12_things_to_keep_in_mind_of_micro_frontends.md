@@ -1,11 +1,15 @@
 # マイクロフロントエンドにおける注意事項 {#things-to-keep-in-mind-of-micro-frontends}
-## ドメインとサブドメイン　{#domain-and-sub-domain}
+## ドメインとサポートドメイン　{#domain-and-support-domain}
 
-ドメイン複雑、共有しない。
+もっともコアとなる提供したいサービスをコアドメイン。
+コアドメインをサポートする側面をサポートドメイン。
+たとえば、ECサイトというサービスがあった場合、どのようなユーザー体験を通して商品を購入してもらうか。
+業界最安値の商品を提供するというのがコアドメインだった場合、
+サポートドメインは、その商品を発見するための検索ドメイン、やすさを強調する商品ドメインとか。
+
+コアドメインを達成するためには、サポートドメインはあったほうがよいが、なくてもよい。
 
 ## マイクロフロントエンドの連携手段 {#communication-frontends}
-
-* 気を付けないといけないこと（Route,State,Message）
 
 * ルーティング
 * 状態管理
@@ -38,3 +42,116 @@ https://speakerdeck.com/silverbirder/micro-frontends-on-kubernetes-trial
 ## 実績企業 {#compoany}
 
 https://github.com/Silver-birder/think-micro-frontends/blob/master/research/docs/company.md
+
+# Micro Frontendsの良さ {#A}
+
+私が思うMicro Frontendsから得られる最大の恩恵は、"<b>局所化</b>" だと思います。
+
+フロントエンドをサービスごと（商品、注文、検索など）に分割することで
+
+* サービスの<b>専門性</b>向上
+  * ex. 対象サービスのフロントエンドだけに集中できる
+* サービスの<b>開発速度</b>向上
+  * ex. 対象サービスのソースコードだけ読めばよい
+  * ex. 対象サービスだけにライブラリアップデートすればよい
+  * ex. フレームワークの切り替えは対象サービスだけすればよい
+
+少し薄っぺらいかも知れませんが、↑のように実感しています。
+
+※ Micro FrontendsはWebベースのアーキテクチャになります。
+
+# Micro Frontendsの難しさ {#B}
+
+ここは、まだちゃんと掘り下げれていませんが、次のようなものがあります。
+
+* 特定チームが改善しても、チーム全体が改善しない
+  * ex. あるチームがWebpackのビルド時間短縮に成功しても、他のチームは影響を受けない
+  * ex. すべてのチームが採用しているライブラリのセキュリティパッチは、それぞれのチームが更新しなければならない
+* チーム全体へ共有する仕組みを考える必要がある
+  * ex. デザインシステム、パフォーマンス、ナレッジ
+* エッジな技術スタック採用は、チームメンバー移動を困難にする
+  * ex. パラダイムシフトが発生してしまう技術スタック
+
+# Micro Frontendsの作るうえで考えること {#C}
+
+フロントエンドをマイクロサービス化するということは、各サービスでHTML/CSS/JSを作ることになります。
+それらの<b>サービスを統合するサービス</b>が重要になってきます。
+
+大きく分けて2つの統合パターンがあります。
+
+|種類|解決手段|メリット|デメリット| 
+| ---- | ---- | ---- | ---- | 
+|サーバーサイド統合| SSI, ESI, Tailor, Podium  |・SEO対策上よい<br>・ユーザーのネットワークレイテンシーが少ない<br>・初回ロードパフォーマンスが優れている|・インタラクションアプローチが不得意|
+|クライアントサイド統合|<s>Ajax, Iframe,</s> Web Components  |・Web標準<br>・シャドウDOMによる堅牢な作り|・サポートブラウザに依存する<br>・クライアント側のJavaScriptが有効であること|
+
+また、これら2つの選択基準は次のようになります。
+
+|種類|選択基準|
+| ---- | ---- | 
+|サーバーサイド統合|良好な読み込みパフォーマンスと検索エンジンのランキングがプロジェクトの優先事項であること|
+|クライアントサイド統合|さまざまなチームのユーザーインタフェースを1つの画面に統合する必要があるインタラクティブなアプリケーションを構築すること|
+
+# TEST {#D}
+
+ただし、すべてのWebサービスをMFEにする必要はありません。さきほどの説明にもあったとおり、規模が拡大した際にMFEを検討する必要があるため、小・中規模のWebサービスでは時期尚早です。また、次の画像にもあるとおり、静的ページ（Webサイト、Webドキュメント）や動的ページ（Webアプリ）の両極端に位置するWebサービスはMFEの適用するのには不向きです（と書いています）。両方の要素が求められるWebサービスにMFEが役立ちます。MFEの適用されるWebサービス事例では、ECサイトが挙げられます。
+
+![mfe-web-document-to-web-app](https://media-exp1.licdn.com/dms/image/C5612AQEMjY51MwQMww/article-inline_image-shrink_1000_1488/0?e=1611187200&v=beta&t=EGumrK4ul8MRLTYa-gGjT93c4b7qSFWyzH9mwp5mq0w)
+*[Microfrontends: An approach to building Scalable Web Apps](https://www.linkedin.com/pulse/microfrontends-approach-building-scalable-web-apps-vinci-rufus)*
+
+
+※ MFEという言葉は、[Micro frontends | Technology Radar | ThoughtWorks](https://www.thoughtworks.com/radar/techniques/micro-frontends) の記事より生まれたみたいです。
+※ [Micro Frontends in Action](https://www.manning.com/books/micro-frontends-in-action)にも記載されていますが、この考え方はWebサービスを対象としており、ネイティブアプリは対象としていません。
+
+# ProsCons {#E}
+## Pros {#F}
+|観点|内容|
+|--|--|
+|独立性|・任意のテクノロジーと任意のチームで開発可能<br>|
+|展開|・特定の機能をエンドツーエンド（バック、フロント、デプロイ）で確実に実行可能|
+|俊敏性|・特定のドメインについて最高の知識をもつチーム間で作業を分散すると、リリースプロセスが確実にスピードアップして簡素化される。<br>・フロントエンドとリリースが小さいということは、リグレッションテストの表面がはるかに小さいことを意味する。リリースごとの変更は少なく、理論的にはテストに費やす時間を短縮できる。<br>・フロントエンドのアップグレード/変更にはコストが小さくなる|
+
+## Cons {#G}
+|観点|内容|
+|--|--|
+|独立性|・独立できず、相互接続しているチームが存在しがち<br>・多くの機能で複数のマイクロフロントエンドにまたがる変更が必要になり、独立性や自律性が低下<br>・ライブラリを共有すること自体は問題ないが、不適切な分割によって作成された任意の境界を回避するための包括的な場所として使用すると、問題が発生する。<br>・コンポーネント間の通信の構築は、実装と維持が困難であるだけでなく、コンポーネントの独立性が取り除かれる<br>・横断的関心ことへの変更ですべてのマイクロフロントエンドを変更することは、独立性が低下する|
+|展開|・より大きな機能の部分的な実装が含まれているため、個別にリリースできない<br>・サイト全体のCI / CDプロセス|
+|俊敏性|・重複作業が発生する<br>・検出可能性が低下した結果、一部の標準コンポーネントを共有できず、個別のフロントエンド間で実装が重複してしまう。<br>・共有キャッシュがないと、各コンポーネントは独自のデータセットをプルダウンする必要があり、大量の重複呼び出しが発生する。|
+|パフォーマンス|・マイクロフロントエンドの実装が不適切な場合、パフォーマンスが低下する可能性がある。|
+
+# 統合パターン {#F}
+
+[https://bluesoft.com/micro-frontends-the-missing-piece-of-the-puzzle-in-feature-teams/:embed]
+
+|統合|選択基準|技術|
+|--|--|--|
+|サーバーサイド統合|良好な読み込みパフォーマンスと検索エンジンのランキングがプロジェクトの優先事項であること|・Podium<br>・Ara-Framework<br>・Tailor<br>・Micromono<br>・PuzzleJS<br>・namecheap/ilc|
+|エッジサイド統合|サーバーサイド統合と同じ|・Varnish EDI <br>・Edge Worker<br><br>CDN<br>・ Akamai<br>・ Cloudfront<br>・ Fastly<br>・CloudFlare<br>・ Fly.io|
+|クライアント統合|さまざまなチームのユーザーインタフェースを1つの画面に統合する必要があるインタラクティブなアプリケーションを構築すること|・Ajax<br>・Iframe<br>・Web Components<br>・Luigi<br>・Single-Spa<br>・FrintJS<br>・Hinclude<br>・Mashroom|
+|ビルド時統合|他の統合が非常に複雑に思われる場合に、<br>小さなプロジェクト（3チーム以下）にのみ使用すること|・ Bit.dev<br>・ Open Components<br>・ Piral|
+
+
+# リポジトリ {#H}
+
+|パターン|Pros|Cons|技術|
+|--|--|--|--|
+|モノリポ|コードベース全体に簡単にアクセスできる。<br> （検出可能性が高い）|モノリポジトリは、特に大規模なチームで作業しているときに、<br>動作が遅くなる傾向があり、バージョン管理下のコミットとファイルの数が増加する。|・nx.dev<br>・lerna|
+|マルチリポ|・マルチリポジトリは、非常に大規模なプロジェクトと<br>それに取り組む非常に大規模なチームがある場合に最適。|マルチリポジトリ環境では、各マイクロアプリを<br>個別にビルドする必要がある。||
+
+# 分割ポリシー 
+
+フロントエンドを分割する方針について
+
+- 水平分割
+  - 画面内にある要素で分割
+  - ビジネス上の機能
+- 垂直分割
+  - 画面毎に分割
+
+# Webサイト⇔Webアプリ
+
+<figure title="document-application">
+<img alt="document-application" src="https://res.cloudinary.com/silverbirder/image/upload/v1614412210/silver-birder.github.io/blog/microfrontends-document-application.png">
+<figcaption><a href="https://www.linkedin.com/pulse/microfrontends-approach-building-scalable-web-apps-vinci-rufus">Microfrontends: An approach to building Scalable Web Apps</a></figcaption>
+</figure>
+
+マイクロフロントエンドは、かなりのオーバーラップがあるバンドの中央部分の大部分にもっとも適しています。バンドの両極端に該当するプロジェクトにマイクロフロントエンドアーキテクチャを実装しようとすると、生産性に反するそうです。
