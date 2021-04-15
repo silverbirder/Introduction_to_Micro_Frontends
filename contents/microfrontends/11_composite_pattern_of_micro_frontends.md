@@ -44,3 +44,36 @@
 フロントエンドアプリケーションは、各フロントエンドチームのmoduleをインポートして利用する。
 
 ![build-time-composition](../../assets/images/drawio/microfrontends/build-time-composition.png)
+
+## 組成パターンとソフトウェア {#composition-pros-cons}
+
+|種類|解決手段|メリット|デメリット| 
+| ---- | ---- | ---- | ---- | 
+|サーバーサイド統合| SSI, ESI, Tailor, Podium  |・SEO対策上よい<br>・ユーザーのネットワークレイテンシーが少ない<br>・初回ロードパフォーマンスが優れている|・インタラクションアプローチが不得意|
+|クライアントサイド統合|<s>Ajax, Iframe,</s> Web Components  |・Web標準<br>・シャドウDOMによる堅牢な作り|・サポートブラウザに依存する<br>・クライアント側のJavaScriptが有効であること|
+
+## 組成パターンとメリット・デメリット {#composition-pros-cons}
+
+|種類|選択基準|
+| ---- | ---- | 
+|サーバーサイド統合|良好な読み込みパフォーマンスと検索エンジンのランキングがプロジェクトの優先事項であること|
+|クライアントサイド統合|さまざまなチームのユーザーインタフェースを1つの画面に統合する必要があるインタラクティブなアプリケーションを構築すること|
+
+|統合|選択基準|技術|
+|--|--|--|
+|サーバーサイド統合|良好な読み込みパフォーマンスと検索エンジンのランキングがプロジェクトの優先事項であること|・Podium<br>・Ara-Framework<br>・Tailor<br>・Micromono<br>・PuzzleJS<br>・namecheap/ilc|
+|エッジサイド統合|サーバーサイド統合と同じ|・Varnish EDI <br>・Edge Worker<br><br>CDN<br>・ Akamai<br>・ Cloudfront<br>・ Fastly<br>・CloudFlare<br>・ Fly.io|
+|クライアント統合|さまざまなチームのユーザーインタフェースを1つの画面に統合する必要があるインタラクティブなアプリケーションを構築すること|・Ajax<br>・Iframe<br>・Web Components<br>・Luigi<br>・Single-Spa<br>・FrintJS<br>・Hinclude<br>・Mashroom|
+|ビルド時統合|他の統合が非常に複雑に思われる場合に、<br>小さなプロジェクト（3チーム以下）にのみ使用すること|・ Bit.dev<br>・ Open Components<br>・ Piral|
+
+## マイクロフロントエンドの分割ポリシー {#division-policy-of-micro-frontends}
+
+これまで話してきた組成は、水平分割である。
+つまり、1つのページに複数のフロントエンドを組成する。
+これとは、対照的に垂直分割もある。
+これは、1ページに1つのフロントエンドチームが対応する。
+
+* 水平分割
+  * 画面内にある要素で分割
+* 垂直分割
+  * 画面毎に分割
