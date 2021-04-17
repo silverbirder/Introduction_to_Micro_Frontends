@@ -30,7 +30,7 @@
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
     "ja-hiragana-keishikimeishi": true,
-    "ja-joyo-or-jinmeiyo-kanji": true,
+    "ja-joyo-or-jinmeiyo-kanji": false,
     "ja-kyoiku-kanji": false,
     "ja-no-abusage": true,
     "ja-no-inappropriate-words": true,

@@ -4,7 +4,7 @@
 
 ## 前提 {#premise}
 
-1つのECサイトを3つのチームでアプリケーション開発する想定とする。
+とあるECサイトを3つのチームでアプリケーション開発すると想定する。
 
 ![premise-micro-frontends](../../assets/images/drawio/microfrontends/premise-micro-frontends.png)
 
@@ -16,56 +16,125 @@
   * Productへの購買意欲を高める
 
 これらのチームは、バックエンドからフロントエンドまで1チームで構成されている。
-フロントエンドは、コンテンツ（HTML,CSS,JS）を提供する。
+フロントエンドは、フラグメント（HTML,CSS,JS）を提供する。
 
-## Client-side組成パターン {#client-side-composition}
+## クライアントサイド組成パターン {#client-side-composition}
 
 クライアントサイドレンダリングするタイミングで、組成する。
 一番わかりやすい例が、iframeやWeb Componentsである。
-各フロントエンドチームのコンテンツを、ブラウザ上で組成する。
-もっとも簡単な手段は、iframeによる読み込みだ。
+各フロントエンドチームのフラグメントを、ブラウザ上で組成する。
+もっとも簡単な手段は、iframeを使うことだ。
 
 ![client-side-composition](../../assets/images/drawio/microfrontends/client-side-composition.png)
 
-## Server-side組成パターン {#server-side-composition}
+### メリット・デメリット {#merit-and-demerits-of-client-side-composition}
+
+* メリット
+  * Web標準
+  * シャドウDOMによる堅牢な作り
+* デメリット
+  * サポートブラウザに依存する
+  * クライアント側のJavaScriptが有効であること
+
+### 選択基準 {#selection-criteria-of-client-side-composition}
+
+次の条件を満たす。
+
+* さまざまなチームのユーザーインタフェースを1つの画面に統合する必要があること
+* インタラクティブなアプリケーションを構築すること
+
+### 技術 {#client-side-composition-tech}
+
+* Ajax
+* Iframe
+* Web Components
+* Luigi
+* Single-Spa
+* FrintJS
+* Hinclude
+* Mashroom
+
+## サーバーサイド組成パターン {#server-side-composition}
 
 サーバーサイドレンダリングのタイミングで、組成する。
 一番わかりやすい例が、SSIである。
-各フロントエンドチームのコンテンツを、サーバーサイドで組成する。
+各フロントエンドチームのフラグメントを、サーバーサイドで組成する。
 
 ![server-side-composition](../../assets/images/drawio/microfrontends/server-side-composition.png)
 
-## Build-time組成パターン {#build-time-composition}
+### メリット・デメリット {#merit-and-demerits-of-server-side-composition}
+
+* メリット
+  * SEO対策上よい
+  * ユーザーのネットワークレイテンシーが少ない
+  * 初回ロードパフォーマンスが優れている
+* デメリット
+  * インタラクションアプローチが不得意
+
+### 選択基準 {#selection-criteria-of-server-side-composition}
+
+次の条件を満たす。
+
+* 良好な読み込みパフォーマンス
+* 検索エンジンのランキング
+
+これらが、プロジェクトの優先事項であること。
+
+### 技術 {#server-side-composition-tech}
+
+* SSI
+* Podium
+* Ara-Framework
+* Tailor
+* Micromono
+* PuzzleJS
+* namecheap/ilc
+
+## エッジサイド組成パターン {#edge-side-composition}
+
+サーバーサイド組成と同じパターンだが、組成場所がエッジに変わる。
+次のようなCDNサービスを使うことになる。
+
+* Akamai
+* Cloudfront
+* Fastly
+* CloudFlare
+* Fly.io
+
+### 技術 {#edge-side-composition-tech}
+
+* ESI
+* Varnish EDI
+* Edge Worker
+
+## ビルドタイム組成パターン {#build-time-composition}
 
 アプリケーションのビルドするタイミングで、組成する。
 一番わかりやすい例が、[bit.dev](https://bit.dev/)のようなサービスである。
-各フロントエンドチームがnpm moduleを開発する。
-そのmoduleには、コンテンツ（HTML,CSS,JS）を提供する機能を含める。
-フロントエンドアプリケーションは、各フロントエンドチームのmoduleをインポートして利用する。
+各フロントエンドチームがフラグメントモジュールを開発する。
+フロントエンドアプリケーションは、各フロントエンドチームのモジュールをインポートして利用する。
 
 ![build-time-composition](../../assets/images/drawio/microfrontends/build-time-composition.png)
 
-## 組成パターンとソフトウェア {#composition-pros-cons}
+### メリット・デメリット {#merit-and-demerits-of-build-time-composition}
 
-<!-- textlint-disable max-doc-width,ja-joyo-or-jinmeiyo-kanji -->
+* メリット
+  * サーバリソース意識せず、サーバーサイド組成のメリットを享受できる
+* デメリット
+  * モジュールバージョニングとデプロイの非効率性
 
-|種類|解決手段|メリット|デメリット| 
-| ---- | ---- | ---- | ---- | 
-|サーバーサイド統合| SSI, ESI, Tailor, Podium|・SEO対策上よい<br>・ユーザーのネットワークレイテンシーが少ない<br>・初回ロードパフォーマンスが優れている|・インタラクションアプローチが不得意|
-|クライアントサイド統合|Ajax, Iframe, Web Components|・Web標準<br>・シャドウDOMによる堅牢な作り|・サポートブラウザに依存する<br>・クライアント側のJavaScriptが有効であること|
+### 選択基準 {#selection-criteria-of-build-time-composition}
 
-## 組成パターンとメリット・デメリット {#composition-pros-cons}
+他の統合が非常に複雑と思われる場合に選択する。
+小さなプロジェクト（3チーム以下）のみ使用すること。
 
-|統合|選択基準|技術|
-|--|--|--|
-|サーバーサイド統合|良好な読み込みパフォーマンスと検索エンジンのランキングがプロジェクトの優先事項であること|・Podium<br>・Ara-Framework<br>・Tailor<br>・Micromono<br>・PuzzleJS<br>・namecheap/ilc|
-|エッジサイド統合|サーバーサイド統合と同じ|・Varnish EDI <br>・Edge Worker<br><br>CDN<br>・ Akamai<br>・ Cloudfront<br>・ Fastly<br>・CloudFlare<br>・ Fly.io|
-|クライアント統合|さまざまなチームのユーザーインタフェースを1つの画面に統合する必要があるインタラクティブなアプリケーションを構築すること|・Ajax<br>・Iframe<br>・Web Components<br>・Luigi<br>・Single-Spa<br>・FrintJS<br>・Hinclude<br>・Mashroom|
-|ビルド時統合|他の統合が非常に複雑に思われる場合に、<br>小さなプロジェクト（3チーム以下）にのみ使用すること|・ Bit.dev<br>・ Open Components<br>・ Piral|
+### 技術 {#build-time-composition-tech}
+
+・Bit.dev
+・Open Components
+・Piral
 
 ## マイクロフロントエンドの分割ポリシー {#division-policy-of-micro-frontends}
-
-<!-- textlint-enable max-doc-width,ja-joyo-or-jinmeiyo-kanji -->
 
 これまで話してきた組成は、水平分割である。
 つまり、1つのページに複数のフロントエンドを組成する。
