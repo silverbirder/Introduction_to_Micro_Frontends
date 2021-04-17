@@ -15,7 +15,7 @@
 * マイクロフロントエンド
   * [マイクロフロントエンドの概要](contents/microfrontends/10_overview_of_micro_frontends.md)
   * [マイクロフロントエンドの組成パターン](contents/microfrontends/11_composite_pattern_of_micro_frontends.md)
-  * [WIP マイクロフロントエンドにおける注意事項](contents/microfrontends/12_things_to_keep_in_mind_of_micro_frontends.md)
+  * [マイクロフロントエンドの検討事項](contents/microfrontends/12_micro_frontends_considerations.md)
 * チュートリアル
   * [WIP 概要](contents/tutorial/20_overview_tutorial.md)
   * [WIP クライアントサイド組成](contents/tutorial/21_client_side_composition_tutorial.md)
