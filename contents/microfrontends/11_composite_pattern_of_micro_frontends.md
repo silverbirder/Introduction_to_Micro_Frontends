@@ -130,18 +130,20 @@
 
 ### 技術 {#build-time-composition-tech}
 
-・Bit.dev
-・Open Components
-・Piral
+* Bit.dev
+* Open Components
+* Piral
 
 ## マイクロフロントエンドの分割ポリシー {#division-policy-of-micro-frontends}
 
 これまで話してきた組成は、水平分割である。
-つまり、1つのページに複数のフロントエンドを組成する。
-これとは、対照的に垂直分割もある。
-これは、1ページに1つのフロントエンドチームが対応する。
+つまり、1つのページに複数のフロントエンドチームのフラグメントを組成する。
+これとは、対照的に垂直分割がある。
+これは、1ページに1つのフロントエンドチームが担当する。
 
 * 水平分割
   * 画面内にある要素で分割
 * 垂直分割
   * 画面毎に分割
+
+![vertical-and-horizontal-segmentation](../../assets/images/drawio/microfrontends/vertical-and-horizontal-segmentation.png)
