@@ -1,12 +1,22 @@
-# Webシステムアーキテクチャの歴史[私見] {#history-of-Web-system-architecture}
+# Webシステムアーキテクチャの歴史 {#history-of-Web-system-architecture}
 ## ブラウザ~サーバ {#browser-server}
-![03_history_of_web_system_architecture_1](../../assets/images/drawio/history/03_history_of_web_system_architecture_1.png)
+
+<!-- textlint-disable -->
+
+<img src="../../assets/images/drawio/history/03_history_of_web_system_architecture_1.png" alt="03_history_of_web_system_architecture_1" height="360" />
+
+<!-- textlint-enable -->
 
 BrowserとServerだけの構成というシンプルなWebシステムアーキテクチャだ。
 Serverから静的コンテンツを返すだけや、CGIを使った動的コンテンツを返すこともできる。
 
 ## ブラウザ~サーバ~DB {#browser-server-db}
-![03_history_of_web_system_architecture_2](../../assets/images/drawio/history/03_history_of_web_system_architecture_2.png)
+
+<!-- textlint-disable -->
+
+<img src="../../assets/images/drawio/history/03_history_of_web_system_architecture_2.png" alt="03_history_of_web_system_architecture_2" height="360" />
+
+<!-- textlint-enable -->
 
 データベースが登場。
 Serverから直接データベースを参照する構成や、データベースからAPIを提供する構成がある。
@@ -19,7 +29,12 @@ Serverから直接データベースを参照する構成や、データベー�
 副作用の1つに、データ鮮度の低下が見込まれる。キャッシュは用法用量を守ることが大切だ。
 
 ## ブラウザ~サーバ~DB {#browser-server-db}
-![03_history_of_web_system_architecture_3](../../assets/images/drawio/history/03_history_of_web_system_architecture_3.png)
+
+<!-- textlint-disable -->
+
+<img src="../../assets/images/drawio/history/03_history_of_web_system_architecture_3.png" alt="03_history_of_web_system_architecture_3" height="360" />
+
+<!-- textlint-enable -->
 
 ### BFF {#bff}
 
@@ -116,7 +131,12 @@ Unixの哲学にあるように『ただ1つのことをして、それをうま
   * 外部通信が頻繁に行われるため
 
 ## Micro Frontends {#micro-frontends}
-![03_history_of_web_system_architecture_4](../../assets/images/drawio/history/03_history_of_web_system_architecture_4.png)
+
+<!-- textlint-disable -->
+
+<img src="../../assets/images/drawio/history/03_history_of_web_system_architecture_4.png" alt="03_history_of_web_system_architecture_4" height="360" />
+
+<!-- textlint-enable -->
 
 そして、次がマイクロフロントエンドだ。簡単に説明すると、
 マイクロサービスの考えをフロントエンドにも拡張したアーキテクチャだ。
