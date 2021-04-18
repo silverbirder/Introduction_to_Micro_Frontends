@@ -2,7 +2,7 @@
 
 サーバーサイド組成は、次のような構成図を想定する。
 
-![server_side_composition_tutorial](../../assets/images/drawio/tutorial/server_side_composition_tutorial.png)
+![server-side-composition](../../assets/images/drawio/microfrontends/server-side-composition.png)
 
 先に、組成している部分を紹介する。
 

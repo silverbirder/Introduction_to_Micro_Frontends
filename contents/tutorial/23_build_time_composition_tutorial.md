@@ -2,7 +2,7 @@
 
 　ビルドタイム組成は、次のような構成図を想定する。
 
-![build_time_composition_tutorial](../../assets/images/drawio/tutorial/build_time_composition_tutorial.png)
+![build-time-composition](../../assets/images/drawio/microfrontends/build-time-composition.png)
 
 先に、組成している部分を紹介する。
 まず、次のようなHTMLを使う。

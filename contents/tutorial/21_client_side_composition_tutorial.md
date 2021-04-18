@@ -2,7 +2,7 @@
 
 クライアントサイド組成は、次のような構成図を想定する。
 
-![client_side_composition_tutorial](../../assets/images/drawio/tutorial/client_side_composition_tutorial.png)
+![client-side-composition](../../assets/images/drawio/microfrontends/client-side-composition.png)
 
 先に、組成している部分を紹介する。
 
