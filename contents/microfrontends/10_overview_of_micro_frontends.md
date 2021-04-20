@@ -56,7 +56,7 @@
 
 フロントエンドがモノリスであると、部分的な機能に対してスケールできず、モノリス全体でスケールするしか方法がない。
 たとえば、Next.jsでECサイトを1つのWebサーバに構築する。
-そのサイトの中で、検索、推薦、商品表示の3つの機能を提供するページがあるとする。
+そのサイトの中で、検索(Search)、推薦(Inspire)、商品表示(Product)の3つの機能を提供するページがあるとする。
 
 ![front-end-is-the-bottleneck](../../assets/images/drawio/microfrontends/front-end-is-the-bottleneck.png)
 
@@ -104,7 +104,11 @@ CFTは、共通の目標を持った、異なる専門性をもつ人々のグ�
 * データエンジニア
 * インフラエンジニア
 
-![cross-functional-team](../../assets/images/drawio/microfrontends/cross-functional-team.png)
+<!-- textlint-disable -->
+
+<img src="../../assets/images/drawio/microfrontends/cross-functional-team.png" alt="cross-functional-team" height="360" />
+
+<!-- textlint-enable -->
 
 フロントエンドのエンジニアはUI/UXに関心があるが、データには比較的、専門性が低い。
 そこで、データエンジニアとコラボレーションすることで、表現できるUI/UXのバリエーションを増やすことが可能となる。

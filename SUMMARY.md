@@ -2,8 +2,8 @@
 
 ## 序文 {#first}
 
-* [この資料について](README.md)
-  * [対象読者](README.md#対象読者)
+* [WIP この資料について](README.md)
+  * [WIP 対象読者](README.md#対象読者)
 
 ## 本文 {#body}
 
@@ -23,4 +23,4 @@
 
 ## 結文 {#post}
 
-* [おわりに](contents/postscript.md)
+* [WIP おわりに](contents/postscript.md)

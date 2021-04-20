@@ -30,8 +30,8 @@
 ### メリット・デメリット {#merit-and-demerits-of-client-side-composition}
 
 * メリット
-  * Web標準
-  * シャドウDOMによる堅牢な作り
+  * Web標準技術のみで実現可能
+  * iframeやシャドウDOMによる堅牢な作り
 * デメリット
   * サポートブラウザに依存する
   * クライアント側のJavaScriptが有効であること

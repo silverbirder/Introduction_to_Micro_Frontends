@@ -36,7 +36,7 @@ Fluxによって、状態は唯一の情報源として扱い、一方向デー�
 
 [同年、Hugoが誕生](https://en.wikipedia.org/wiki/Hugo_%28software%29)した。
 Hugoは、Go製のSSG（Static Site Generators）である。
-次の2つの特徴をもつ。
+次の特徴をもつ。
 
 * 生成する元データは、HTMLだけでなくMarkdownもサポート
 * i18n（internationalization and localization）をサポート
