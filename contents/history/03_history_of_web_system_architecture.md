@@ -1,5 +1,5 @@
 # Webシステムアーキテクチャの歴史 {#history-of-Web-system-architecture}
-## ブラウザ~サーバ {#browser-server}
+## ブラウザ-サーバ {#browser-server}
 
 <!-- textlint-disable -->
 
@@ -10,7 +10,7 @@
 BrowserとServerだけの構成というシンプルなWebシステムアーキテクチャだ。
 Serverから静的コンテンツを返すだけや、CGIを使った動的コンテンツを返すこともできる。
 
-## ブラウザ~サーバ~DB {#browser-server-db}
+## ブラウザ-サーバ-API {#browser-server-api}
 
 <!-- textlint-disable -->
 
@@ -28,7 +28,7 @@ Serverから直接データベースを参照する構成や、データベー�
 しかし、キャッシュは麻酔であり、多用は厳禁である。なぜなら、さまざまな副作用があるからだ。
 副作用の1つに、データ鮮度の低下が見込まれる。キャッシュは用法用量を守ることが大切だ。
 
-## ブラウザ~サーバ~DB {#browser-server-db}
+## ブラウザ-BFF-API {#browser-bff-api}
 
 <!-- textlint-disable -->
 
@@ -130,8 +130,7 @@ Unixの哲学にあるように『ただ1つのことをして、それをうま
 * パフォーマンスが不安定
   * 外部通信が頻繁に行われるため
 
-## Micro Frontends {#micro-frontends}
-
+## ブラウザ-マイクロフロントエンド-サーバ-API {#browser-micro-frontends-server-api}
 <!-- textlint-disable -->
 
 <img src="../../assets/images/drawio/history/03_history_of_web_system_architecture_4.png" alt="03_history_of_web_system_architecture_4" height="360" />
