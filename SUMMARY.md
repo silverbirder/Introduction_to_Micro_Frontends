@@ -39,7 +39,7 @@
     * [WebサイトとWebアプリ](contents/microfrontends/12_micro_frontends_considerations.md#Web-site-and-Web-app-and-micro-frontends)
     * [モノリポ・マルチリポ](contents/microfrontends/12_micro_frontends_considerations.md#monolithic-repositories-and-multi-repositories)
 * チュートリアル
-  * [WIP 概要](contents/tutorial/20_overview_tutorial.md)
+  * [概要](contents/tutorial/20_overview_tutorial.md)
   * [WIP クライアントサイド組成](contents/tutorial/21_client_side_composition_tutorial.md)
   * [WIP サーバーサイド組成](contents/tutorial/22_server_side_composition_tutorial.md)
   * [WIP ビルドタイム組成](contents/tutorial/23_build_time_composition_tutorial.md)

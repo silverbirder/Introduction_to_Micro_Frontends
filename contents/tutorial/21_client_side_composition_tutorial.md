@@ -4,16 +4,29 @@
 
 ![client-side-composition](../../assets/images/drawio/microfrontends/client-side-composition.png)
 
-先に、組成している部分を紹介する。
+サンプルコードは、[こちら](https://github.com/Silver-birder/micro-frontends-sample-codes/tree/main/pattern/client_side)。
+
+## 最小構成 {#minimum-set}
+
+まず一番簡単な最小構成のクライアントサイド組成を説明する。
+説明する順は、次のとおりだ。
+
+1. 組成の説明
+2. フラグメントの説明
+3. 結果
+
+### 組成 {#composite}
 
 ```html
 <!-- team-composite/index.html -->
 <script type="module" src="./search/team-search-text.js" defer></script>
-<team-search-text .title="Text"></team-search-text>
+<team-search-text .title=""></team-search-text>
 ```
 
-このように、Search Teamから提供されるカスタム要素モジュールを読み込む。
-カスタム要素モジュールは、次のようなコードになる。
+このように、組成するHTMLではフラグメントを読み込む。このフラグメントには、カスタム要素を定義してある。
+そのため、`<team-search-text>`のタグが使える。
+
+### フラグメント {#fragment}
 
 ```javascript
 // team-search-text/team-search-text.js
@@ -36,10 +49,16 @@ export class TeamSearchText extends LitElement {
   }
   constructor() {
     super();
-    this.title = 'Text';
+    this.title = '';
   }
   render() {
     return html`<div>Team Search ${this.title}</div>`;
   }
 }
 ```
+
+### 結果 {#results}
+
+その結果、次のような画面が表示される。
+
+![minimum_set_client_side_composition_tutorial](../../assets/images/drawio/tutorial/minimum_set_client_side_composition_tutorial.png)
