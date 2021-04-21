@@ -40,14 +40,22 @@
 
 次のリンクには、より多くの企業名を記録している。
 
+<!-- textlint-disable -->
+
 * [github.com/Silver-birder/think-micro-frontends/research/docs/company.md](https://github.com/Silver-birder/think-micro-frontends/blob/master/research/docs/company.md)
+
+<!-- textlint-enable -->
 
 ## コアドメインとサブドメイン　{#core-domain-and-sub-domain}
 
 マイクロフロントエンドでは、コアドメインとサブドメインの定義が大切だ。
 ドメインの定義が不適切だと、密結合なフロントエンドとなり、アジリティの低下につながる。
 
+<!-- textlint-disable -->
+
 * [Identifying micro-frontends in our applications | by Luca Mezzalira | DAZN Engineering | Medium](https://medium.com/dazn-tech/identifying-micro-frontends-in-our-applications-4b4995f39257)
+
+<!-- textlint-enable -->
 
 ## WebサイトとWebアプリとマイクロフロントエンド {#Web-site-and-Web-app-and-micro-frontends}
 

@@ -56,7 +56,11 @@
 
 フロントエンドがモノリスであると、部分的な機能に対してスケールできず、モノリス全体でスケールするしか方法がない。
 たとえば、Next.jsでECサイトを1つのWebサーバに構築する。
-そのサイトの中で、検索(Search)、推薦(Inspire)、商品表示(Product)の3つの機能を提供するページがあるとする。
+そのサイトの中で、次の3つの機能を提供するページがあるとする。
+
+* 検索（Search）
+* 推薦（Inspire）
+* 商品表示（Product）
 
 ![front-end-is-the-bottleneck](../../assets/images/drawio/microfrontends/front-end-is-the-bottleneck.png)
 

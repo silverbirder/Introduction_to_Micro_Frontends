@@ -1,5 +1,5 @@
 # フロントエンドソフトウェアの歴史 {#history-of-frontend-software}
-## 2006年~2011年{#2006-2011}
+## 2006年〜2011年{#2006-2011}
 ![02_history_of_frontend_software_1](../../assets/images/drawio/history/02_history_of_frontend_software_1.png)
 
 [2006年、jQueryの誕生](https://en.wikipedia.org/wiki/JQuery)により、フロントエンドの開発は加速する。
@@ -21,7 +21,7 @@ jQueryの開発の加速後、課題が見えてきた。一貫したデータ�
 AngularJS、Backbone.js、Ember.jsのようなクライアントサイドにおけるMVCアーキテクチャが話題となる。
 AngularJSから、AngularJS2への移行に互換性がないため、Angularユーザは激怒した。
 
-## 2012年~2015年{#2012-2015}
+## 2012年〜2015年{#2012-2015}
 ![02_history_of_frontend_software_2](../../assets/images/drawio/history/02_history_of_frontend_software_2.png)
 
 [2012年、Bowerが誕生](https://github.com/bower/bower/blob/master/CHANGELOG.md)した。
@@ -59,7 +59,7 @@ GraphQLは、API向けのクエリ言語である。
 クライアント側から要求するデータ構造を定義できるため、サーバ側は必要以上のデータを返却しなくて済む。
 そのような柔軟性は、多種多様なデータをもつサービスには効果的である。
 
-## 2015年~2019年{#2015-2019}
+## 2015年〜2019年{#2015-2019}
 ![02_history_of_frontend_software_3](../../assets/images/drawio/history/02_history_of_frontend_software_3.png)
 
 [2015年、AMPが誕生](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages)した。

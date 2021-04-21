@@ -1,5 +1,5 @@
 # Web技術における標準化の歴史 {#history-of-Web-standardization}
-## 1960年~1995年 {#1960-1995}
+## 1960年〜1995年 {#1960-1995}
 
 Webの始まりは、1960年代からとなる。
 [インターネット](https://en.wikipedia.org/wiki/History_of_the_Internet)の誕生だ。
