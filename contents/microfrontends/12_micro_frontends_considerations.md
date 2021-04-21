@@ -40,14 +40,14 @@
 
 次のリンクには、より多くの企業名を記録している。
 
-* https://github.com/Silver-birder/think-micro-frontends/blob/master/research/docs/company.md
+* [github.com/Silver-birder/think-micro-frontends/research/docs/company.md](https://github.com/Silver-birder/think-micro-frontends/blob/master/research/docs/company.md)
 
 ## コアドメインとサブドメイン　{#core-domain-and-sub-domain}
 
 マイクロフロントエンドでは、コアドメインとサブドメインの定義が大切だ。
 ドメインの定義が不適切だと、密結合なフロントエンドとなり、アジリティの低下につながる。
 
-* https://medium.com/dazn-tech/identifying-micro-frontends-in-our-applications-4b4995f39257
+* [Identifying micro-frontends in our applications | by Luca Mezzalira | DAZN Engineering | Medium](https://medium.com/dazn-tech/identifying-micro-frontends-in-our-applications-4b4995f39257)
 
 ## WebサイトとWebアプリとマイクロフロントエンド {#Web-site-and-Web-app-and-micro-frontends}
 
@@ -63,11 +63,20 @@ WebサイトやWebアプリの両極端に位置するサービスへ、マイ�
 
 ## モノリポ・マルチリポ {#monolithic-repositories-and-multi-repositories}
 
-<!-- textlint-disable -->
+マイクロフロントエンドのリポジトリ戦略として、モノリポとマルチリポがある。
+そのメリットやデメリットは、次のとおりだ。
 
-|種類|Pros|Cons|技術|
-|--|--|--|
-|モノリポ|コードベース全体に簡単にアクセス可能（検出可能性が高い）|・大規模なチームで作業しているときに、動作が遅くなる傾向あり<br>・バージョン管理下のコミットとファイルの数が増加|nx.dev, lerna|
-|マルチリポ|大規模なプロジェクトと、それに取り組む大規模なチームがある場合に最適|各マイクロアプリを個別にビルドする必要あり|None|
-
-<!-- textlint-enable -->
+* モノリポ
+  * メリット
+    * コードベース全体に簡単にアクセス可能（検出可能性が高い）
+  * デメリット
+    * 大規模なチームで作業しているときに、動作が遅くなる傾向あり
+    * バージョン管理下のコミットとファイルの数が増加
+  * 技術
+    * nx.dev
+    * lerna
+* マルチリポ
+  * メリット
+    * 大規模なプロジェクトと、それに取り組む大規模なチームがある場合に最適
+  * デメリット
+    * 各マイクロアプリを個別にビルドする必要あり
