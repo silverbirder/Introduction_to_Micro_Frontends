@@ -1,12 +1,4 @@
-# クライアントサイド組成 - チュートリアル {#client-side-composition-tutorial}
-
-クライアントサイド組成は、次のような構成図を想定する。
-
-![client-side-composition](../../assets/images/drawio/microfrontends/client-side-composition.png)
-
-サンプルコードは、[こちら](https://github.com/Silver-birder/micro-frontends-sample-codes/tree/main/pattern/client_side)。
-
-## 最小構成 {#minimum-set}
+# 最小構成 {#minimum-set}
 
 まず一番簡単な最小構成のクライアントサイド組成を説明する。
 説明する順は、次のとおりだ。
@@ -15,7 +7,7 @@
 2. フラグメントの説明
 3. 結果
 
-### 組成 {#composite}
+## 組成 {#composite}
 
 ```html
 <!-- team-composite/index.html -->
@@ -24,9 +16,9 @@
 ```
 
 このように、組成するHTMLではフラグメントを読み込む。このフラグメントには、カスタム要素を定義してある。
-そのため、`<team-search-text>`のタグが使える。
+そのカスタム要素である`<team-search-text>`が使える。
 
-### フラグメント {#fragment}
+## フラグメント {#fragment}
 
 ```javascript
 // team-search-text/team-search-text.js
@@ -34,8 +26,8 @@ import { TeamSearchText } from './src/TeamSearchText.js';
 window.customElements.define('team-search-text', TeamSearchText);
 ```
 
-team-search-textと呼ばれるカスタム要素を定義している。
-team-search-textの詳細は、次のとおりである。
+`team-search-text`と呼ばれるカスタム要素を定義している。
+`team-search-text`の詳細は、次のとおりである。
 
 ```javascript
 // team-search-text/src/TeamSearchText.js
@@ -57,8 +49,8 @@ export class TeamSearchText extends LitElement {
 }
 ```
 
-### 結果 {#results}
+## 結果 {#results}
 
 その結果、次のような画面が表示される。
 
-![minimum_set_client_side_composition_tutorial](../../assets/images/drawio/tutorial/minimum_set_client_side_composition_tutorial.png)
+![minimum_set_client_side_composition_tutorial](../../../assets/images/drawio/tutorial/minimum_set_client_side_composition_tutorial.png)

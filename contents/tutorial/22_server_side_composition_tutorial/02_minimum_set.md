@@ -1,12 +1,4 @@
-# サーバーサイド組成 - チュートリアル {#server-side-composition-tutorial}
-
-サーバーサイド組成は、次のような構成図を想定する。
-
-![server-side-composition](../../assets/images/drawio/microfrontends/server-side-composition.png)
-
-サンプルコードは、[こちら](https://github.com/Silver-birder/micro-frontends-sample-codes/tree/main/pattern/server_side)。
-
-## 最小構成 {#minimum-set}
+# 最小構成 {#minimum-set}
 
 まず一番簡単な最小構成のサーバーサイド組成を説明する。
 説明する順は、次のとおりだ。
@@ -15,7 +7,7 @@
 2. フラグメントの説明
 3. 結果
 
-### 組成 {#composite}
+## 組成 {#composite}
 
 ```javascript
 // team_composite/serve.js
@@ -35,7 +27,7 @@ app.listen(port, () => {
 
 サーバーサイドでレンダリングする際、SEARCH_HOSTへ問い合わせた結果を使っている。
 
-### フラグメント {#fragment}
+## フラグメント {#fragment}
 
 SEARCH_HOSTでは、次のようなサーバーサイドレンダリングをしている。
 
@@ -54,8 +46,8 @@ app.listen(port, () => {
 
 これにより、`Team Search` という文字列を返却している。
 
-### 結果 {#results}
+## 結果 {#results}
 
 その結果、次のような画面が表示される。
 
-![minimum_set_server_side_composition_tutorial](../../assets/images/drawio/tutorial/minimum_set_server_side_composition_tutorial.png)
+![minimum_set_server_side_composition_tutorial](../../../assets/images/drawio/tutorial/minimum_set_server_side_composition_tutorial.png)

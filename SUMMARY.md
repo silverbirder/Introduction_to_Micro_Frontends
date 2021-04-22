@@ -40,9 +40,12 @@
     * [モノリポ・マルチリポ](contents/microfrontends/12_micro_frontends_considerations.md#monolithic-repositories-and-multi-repositories)
 * チュートリアル
   * [概要](contents/tutorial/20_overview_tutorial.md)
-  * [WIP クライアントサイド組成](contents/tutorial/21_client_side_composition_tutorial.md)
-  * [WIP サーバーサイド組成](contents/tutorial/22_server_side_composition_tutorial.md)
-  * [WIP ビルドタイム組成](contents/tutorial/23_build_time_composition_tutorial.md)
+  * [クライアントサイド組成](contents/tutorial/21_client_side_composition_tutorial/01_overview.md)
+    * [最小構成](contents/tutorial/21_client_side_composition_tutorial/02_minimum_set.md)
+  * [サーバーサイド組成](contents/tutorial/22_server_side_composition_tutorial/01_overview.md)
+    * [最小構成](contents/tutorial/22_server_side_composition_tutorial/02_minimum_set.md)
+  * [ビルドタイム組成](contents/tutorial/23_build_time_composition_tutorial/01_overview.md)
+    * [最小構成](contents/tutorial/23_build_time_composition_tutorial/02_minimum_set.md)
 
 ## 結文 {#post}
 
