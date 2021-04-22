@@ -9,6 +9,8 @@
 
 ## 組成 {#composite}
 
+[include](./src/02_minimum_set/src/team-composite/index.html)
+
 ```html
 <!-- team-composite/index.html -->
 <script type="module" src="./search/team-search-text.js" defer></script>

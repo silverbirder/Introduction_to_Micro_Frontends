@@ -1,0 +1,10 @@
+apiVersion: skaffold/v1beta14
+kind: Config
+build:
+  artifacts:
+  - image: team-composite-app
+    context: src/team_composite
+deploy:
+  kubectl:
+    manifests:
+    - src/team_composite/team-composite-app.deployment-service.yml

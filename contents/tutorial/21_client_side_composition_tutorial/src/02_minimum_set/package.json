@@ -1,0 +1,16 @@
+{
+  "name": "client_side_composition_tutorial_02_minimum_set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "lerna bootstrap",
+    "start": "lerna run --parallel start"
+  },
+  "keywords": [],
+  "author": "silverbirder <silverbirder@gmail.com> (https://silver-birder.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "lerna": "^4.0.0"
+  }
+}

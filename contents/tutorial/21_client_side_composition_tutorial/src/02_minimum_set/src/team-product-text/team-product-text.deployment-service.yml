@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-product-text
+  labels:
+    app: team-product-text
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: team-product-text
+  template:
+    metadata:
+      labels:
+        app: team-product-text
+    spec:
+      containers:
+        - name: team-product-text
+          image: team-product-text:v1
+          env:
+            - name: PORT
+              value: "5000"
+          ports:
+            - containerPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: team-product-text
+  labels:
+    app: team-product-text
+spec:
+  selector:
+    app: team-product-text
+  ports:
+    - port: 5000
+      protocol: TCP
+      nodePort: 30005
+  type: LoadBalancer

@@ -11,7 +11,8 @@
     "image-captions",
     "uml",
     "edit-link-plus",
-    "meta-single"
+    "meta-single",
+    "include-codeblock"
   ],
   "pluginsConfig": {
     "image-captions": {

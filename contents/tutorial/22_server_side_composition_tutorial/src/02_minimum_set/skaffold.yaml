@@ -1,0 +1,22 @@
+apiVersion: skaffold/v1beta14
+kind: Config
+build:
+  artifacts:
+  - image: team-basket-app
+    context: src/team_basket
+  - image: team-composite-app
+    context: src/team_composite
+  - image: team-inspire-app
+    context: src/team_inspire
+  - image: team-product-app
+    context: src/team_product
+  - image: team-search-app
+    context: src/team_search
+deploy:
+  kubectl:
+    manifests:
+    - src/team_basket/team-basket-app.deployment-service.yml
+    - src/team_composite/team-composite-app.deployment-service.yml
+    - src/team_inspire/team-inspire-app.deployment-service.yml
+    - src/team_product/team-product-app.deployment-service.yml
+    - src/team_search/team-search-app.deployment-service.yml

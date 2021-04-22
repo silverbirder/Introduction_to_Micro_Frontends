@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-basket-app
+  labels:
+    app: team-basket-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: team-basket-app
+  template:
+    metadata:
+      labels:
+        app: team-basket-app
+    spec:
+      containers:
+        - name: team-basket-app
+          image: team-basket-app:v1
+          env:
+            - name: PORT
+              value: "3000"
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: team-basket-app
+  labels:
+    app: team-basket-app
+spec:
+  selector:
+    app: team-basket-app
+  ports:
+    - port: 3000
+      protocol: TCP
+      nodePort: 30003
+  type: LoadBalancer
