@@ -9,63 +9,29 @@
 
 ## 組成 {#composite}
 
-```html
-<!-- team_composite/public/index.html -->
-<div id="root"></div>
-```
+team_composite/public/index.html
+[include](./src/02_minimum_set/src/team_composite/public/index.html)
 
-次に、`#root` に対して `ReactDOM.render` を実行する。
+起動手段は、`react-scripts start`である。
+次に、`#root`に対して `ReactDOM.render`を実行する。
 
-```javascript
-// team-composite/src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+team_composite/src/index.js
+[include](./src/02_minimum_set/src/team_composite/src/index.js)
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-```
+そのレンダリングで、`App.js`というものがある。
 
-そのレンダリングで、`App.js` というものがある。
+team_composite/src/App.js
+[include](./src/02_minimum_set/src/team_composite/src/App.js)
 
-```javascript
-// team_composite/src/App.js
-import TeamSearchText from '@bit/silver-birder.micro-frontends-sample-collections.team-search-text'
 
-function App() {
-  return (
-    <div>
-        <TeamSearchText />
-    </div>
-  );
-}
-export default App;
-```
-
-こちらにあるとおり、`App.js` には `@bit/silver-birder.*` というモジュールをimportしている。
+こちらにあるとおり、`App.js`には `@bit/silver-birder.*`というモジュールをimportしている。
 
 ### フラグメント {#fragment}
 
-`@bit/silver-birder.*`のモジュールは、次のようなものである。
+`@bit/silver-birder.micro-frontends-sample-collections.team-search-text`のモジュールは、次のようなものである。
 
-```javascript
-// team_search/src/components/team-search-text/index.js
-import React, { Component } from 'react';
-
-export default class TeamSearchText extends Component {
-    render() {
-        return (
-            <div>
-                Team Search
-            </div>
-        );
-    }
-}
-```
+team_search/src/components/team-search-text/index.js
+[include](./src/02_minimum_set/src/team_search/src/components/team-search-text/index.js)
 
 このコードは、[bit.dev](https://bit.dev/)でprivateに公開している。
 

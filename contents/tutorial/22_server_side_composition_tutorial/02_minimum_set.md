@@ -9,42 +9,19 @@
 
 ## 組成 {#composite}
 
-```javascript
-// team_composite/serve.js
-const express = require('express');
-const fetch = require('node-fetch');
-const app = express();
-const port = process.env.PORT || 2000;
-const searchHost = process.env.SEARCH_HOST || 'team-search-app:6000';
-app.get('/',  async (req, res) => {
-  const search = await (await fetch(`http://${searchHost}`)).text();
-  res.send(`${search}`);
-});
-app.listen(port, () => {
-  console.log(`Team Composite app listening at http://localhost:${port}`)
-});
-```
+team_composite/serve.js
+[include](./src/02_minimum_set/src/team_composite/serve.js)
 
 サーバーサイドでレンダリングする際、SEARCH_HOSTへ問い合わせた結果を使っている。
 
 ## フラグメント {#fragment}
 
-SEARCH_HOSTでは、次のようなサーバーサイドレンダリングをしている。
+`SEARCH_HOST`では、次のようなサーバーサイドレンダリングをしている。
 
-```javascript
-// team_search/serve.js
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 6000;
-app.get('/', (req, res) => {
-  res.send('Team Search')
-})
-app.listen(port, () => {
-  console.log(`Team Search app listening at http://localhost:${port}`)
-})
-```
+team_search/serve.js
+[include](./src/02_minimum_set/src/team_search/serve.js)
 
-これにより、`Team Search` という文字列を返却している。
+これにより、`Team Search`という文字列を返却している。
 
 ## 結果 {#results}
 
