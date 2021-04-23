@@ -5,7 +5,6 @@ import fetch from 'node-fetch';
 const hmr = process.argv.includes('--hmr');
 
 const proxyMap = {
-  'basket': process.env.TEAM_BASKET || 'http://localhost:3000',
   'inspire': process.env.TEAM_INSPIRE || 'http://localhost:4000',
   'product': process.env.TEAM_PRODUCT || 'http://localhost:5000',
   'search': process.env.TEAM_SEARCH || 'http://localhost:7000',
@@ -44,9 +43,6 @@ export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
       }
       const url = context.request.url;
       switch (true) {
-        case /^\/basket\//.test(url):
-          await _proxyFetch(`${proxyMap['basket']}/${url.split('/basket/')[1]}`, context);
-          break;
         case /^\/inspire\//.test(url):
           await _proxyFetch(`${proxyMap['inspire']}/${url.split('/inspire/')[1]}`, context);
           break;

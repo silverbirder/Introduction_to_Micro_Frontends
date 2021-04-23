@@ -9,47 +9,22 @@
 
 ## 組成 {#composite}
 
+team-composite/index.html
 [include](./src/02_minimum_set/src/team-composite/index.html)
 
-```html
-<!-- team-composite/index.html -->
-<script type="module" src="./search/team-search-text.js" defer></script>
-<team-search-text .title=""></team-search-text>
-```
-
 このように、組成するHTMLではフラグメントを読み込む。このフラグメントには、カスタム要素を定義してある。
-そのカスタム要素である`<team-search-text>`が使える。
+そのカスタム要素である`team-search-text`を使用している。
 
 ## フラグメント {#fragment}
 
-```javascript
-// team-search-text/team-search-text.js
-import { TeamSearchText } from './src/TeamSearchText.js';
-window.customElements.define('team-search-text', TeamSearchText);
-```
+team-search-text/team-search-text.js
+[include](./src/02_minimum_set/src/team-search-text/team-search-text.js)
 
 `team-search-text`と呼ばれるカスタム要素を定義している。
 `team-search-text`の詳細は、次のとおりである。
 
-```javascript
-// team-search-text/src/TeamSearchText.js
-import { html, css, LitElement } from 'lit-element';
-
-export class TeamSearchText extends LitElement {
-  static get properties() {
-    return {
-      title: { type: String },
-    };
-  }
-  constructor() {
-    super();
-    this.title = '';
-  }
-  render() {
-    return html`<div>Team Search ${this.title}</div>`;
-  }
-}
-```
+team-search-text/src/TeamSearchText.js
+[include](./src/02_minimum_set/src/team-search-text/src/TeamSearchText.js)
 
 ## 結果 {#results}
 

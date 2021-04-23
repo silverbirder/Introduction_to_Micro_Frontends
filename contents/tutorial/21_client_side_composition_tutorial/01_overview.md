@@ -4,4 +4,8 @@
 
 ![client-side-composition](../../../assets/images/drawio/microfrontends/client-side-composition.png)
 
-サンプルコードは、[こちら](https://github.com/Silver-birder/micro-frontends-sample-codes/tree/main/pattern/client_side)。
+<!-- textlint-disable -->
+
+サンプルコードは、[こちら](https://github.com/Silver-birder/Introduction_to_Micro_Frontends/tree/main/contents/tutorial/21_client_side_composition_tutorial/src/)。
+
+<!-- textlint-enable -->
