@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-search-box
+  labels:
+    app: team-search-box
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: team-search-box
+  template:
+    metadata:
+      labels:
+        app: team-search-box
+    spec:
+      containers:
+        - name: team-search-box
+          image: team-search-box:v1
+          env:
+            - name: PORT
+              value: "7000"
+          ports:
+            - containerPort: 7000
+              name: search-p
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: team-search-box
+  labels:
+    app: team-search-box
+spec:
+  selector:
+    app: team-search-box
+  ports:
+    - port: 7000
+      protocol: TCP
+      nodePort: 30007
+  type: LoadBalancer
