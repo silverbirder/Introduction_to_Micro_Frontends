@@ -2,7 +2,7 @@
   "version": 2,
   "tags": [
     {
-      "name": "team-search-box",
+      "name": "team-search",
       "description": "A component with a title and an action counter",
       "properties": [
         {
@@ -22,7 +22,7 @@
       "slots": [],
       "cssProperties": [
         {
-          "name": "--team-search-box-text-color",
+          "name": "--team-search-text-color",
           "description": "Main Text Color",
           "type": "Color"
         }

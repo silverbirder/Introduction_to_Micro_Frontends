@@ -7,7 +7,21 @@
   <title>team-composite</title>
 </head>
 <body>
-  <team-search-box></team-search-box>
-  <script type="module" src="./search/team-search-box.js" defer></script>
+  <div id="root"></div>
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import './inspire/team-inspire.js';
+    import './search/team-search.js';
+    import './product/team-product.js';
+    const items = ['Product1', 'Product2'];
+    render(
+      html`
+        <team-search-box></team-search-box>
+        <team-product-list .items=${items}></team-product-list>
+        <team-inspire-item></team-inspire-item>
+      `,
+      document.querySelector('#root')
+    );
+  </script>
 </body>
 </html>

@@ -1,19 +1,19 @@
-# \<team-search-box>
+# \<team-inspire>
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 ```bash
-npm i team-search-box
+npm i team-inspire
 ```
 
 ## Usage
 ```html
 <script type="module">
-  import 'team-search-box/team-search-box.js';
+  import 'team-inspire/team-inspire.js';
 </script>
 
-<team-search-box></team-search-box>
+<team-inspire></team-inspire>
 ```
 
 

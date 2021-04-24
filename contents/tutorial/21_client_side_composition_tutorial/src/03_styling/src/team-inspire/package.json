@@ -1,8 +1,8 @@
 {
-  "name": "team-search-box",
+  "name": "team-inspire",
   "version": "0.0.0",
-  "description": "Webcomponent team-search-box following open-wc recommendations",
-  "author": "team-search-box",
+  "description": "Webcomponent team-inspire following open-wc recommendations",
+  "author": "team-inspire",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",

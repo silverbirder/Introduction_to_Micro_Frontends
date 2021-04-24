@@ -5,6 +5,8 @@ import fetch from 'node-fetch';
 const hmr = process.argv.includes('--hmr');
 
 const proxyMap = {
+  'inspire': process.env.TEAM_INSPIRE || 'http://localhost:4000',
+  'product': process.env.TEAM_PRODUCT || 'http://localhost:5000',
   'search': process.env.TEAM_SEARCH || 'http://localhost:7000'
 };
 export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
@@ -41,6 +43,12 @@ export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
       }
       const url = context.request.url;
       switch (true) {
+        case /^\/inspire\//.test(url):
+          await _proxyFetch(`${proxyMap['inspire']}/${url.split('/inspire/')[1]}`, context);
+          break;
+        case /^\/product\//.test(url):
+          await _proxyFetch(`${proxyMap['product']}/${url.split('/product/')[1]}`, context);
+          break;
         case /^\/search\//.test(url):
           await _proxyFetch(`${proxyMap['search']}/${url.split('/search/')[1]}`, context);
           break;
