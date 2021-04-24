@@ -2,8 +2,6 @@ apiVersion: skaffold/v1beta14
 kind: Config
 build:
   artifacts:
-  - image: team-basket-text
-    context: src/team-basket-text
   - image: team-composite-app
     context: src/team-composite
   - image: team-inspire-text
@@ -15,7 +13,6 @@ build:
 deploy:
   kubectl:
     manifests:
-    - src/team-basket-text/team-basket-text.deployment-service.yml
     - src/team-composite/team-composite-app.deployment-service.yml
     - src/team-inspire-text/team-inspire-text.deployment-service.yml
     - src/team-product-text/team-product-text.deployment-service.yml
