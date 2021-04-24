@@ -4,16 +4,16 @@ build:
   artifacts:
   - image: team-composite-app
     context: src/team-composite
-  - image: team-inspire-text
-    context: src/team-inspire-text
-  - image: team-product-text
-    context: src/team-product-text
-  - image: team-search-text
-    context: src/team-search-text
+  - image: team-inspire
+    context: src/team-inspire
+  - image: team-product
+    context: src/team-product
+  - image: team-search
+    context: src/team-search
 deploy:
   kubectl:
     manifests:
     - src/team-composite/team-composite-app.deployment-service.yml
-    - src/team-inspire-text/team-inspire-text.deployment-service.yml
-    - src/team-product-text/team-product-text.deployment-service.yml
-    - src/team-search-text/team-search-text.deployment-service.yml
+    - src/team-inspire/team-inspire.deployment-service.yml
+    - src/team-product/team-product.deployment-service.yml
+    - src/team-search/team-search.deployment-service.yml

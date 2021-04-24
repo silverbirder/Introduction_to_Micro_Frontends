@@ -20,6 +20,12 @@ spec:
           env:
             - name: PORT
               value: "2000"
+            - name: TEAM_INSPIRE
+              value: "http://team-inspire-text:4000"
+            - name: TEAM_PRODUCT
+              value: "http://team-product-text:5000"
+            - name: TEAM_SEARCH
+              value: "http://team-search-text:7000"
           ports:
             - containerPort: 2000
 ---
