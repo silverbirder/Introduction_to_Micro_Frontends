@@ -1,9 +1,9 @@
 import { html, css, LitElement } from 'lit-element';
 
-export class TeamProductList extends LitElement {
+export class TeamInspireList extends LitElement {
   static get styles() {
     return css`
-      team-product-item {
+      team-inspire-item {
         margin: 10px 0;
         display: block;
       }
@@ -23,8 +23,9 @@ export class TeamProductList extends LitElement {
 
   render() {
     return html`
+      <div>Recommended <br>for you</div>
       ${this.items.map(item => {
-        return html`<team-product-item .name=${item}></team-product-item>`;
+        return html`<team-inspire-item .name=${item}></team-inspire-item>`;
       })}
     `;
   }

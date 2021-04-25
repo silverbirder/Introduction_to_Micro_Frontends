@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>team-composite</title>
 </head>
+<style>
+  team-search-box {
+    border: medium dotted red;
+  }
+  team-product-list {
+    border: medium dotted blue;
+    display: table;
+    width: 167px;
+  }
+  team-inspire-list {
+    border: medium dotted green;
+    position: absolute;
+    left: 200px;
+    top: 8px;
+    height: 183px;
+  }
+</style>
 <body>
   <div id="root"></div>
   <script type="module">
@@ -18,7 +35,7 @@
       html`
         <team-search-box></team-search-box>
         <team-product-list .items=${items}></team-product-list>
-        <team-inspire-item></team-inspire-item>
+        <team-inspire-list .items=${items}></team-inspire-list>
       `,
       document.querySelector('#root')
     );
