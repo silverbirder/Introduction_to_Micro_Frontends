@@ -3,6 +3,12 @@
 [前章](./02_minimum_set.html)では、単純な組成だけであった。
 本章では、目的とするレイアウトに近づける。機能はまだ作らない。
 
+<!-- textlint-disable -->
+
+サンプルコードは、[こちら](https://github.com/Silver-birder/Introduction_to_Micro_Frontends/tree/main/contents/tutorial/21_client_side_composition_tutorial/src/03_styling/)。
+
+<!-- textlint-enable -->
+
 ## 組成 {#composite}
 
 team-composite/index.html

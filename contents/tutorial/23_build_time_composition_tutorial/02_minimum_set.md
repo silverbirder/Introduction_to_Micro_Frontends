@@ -7,6 +7,12 @@
 2. フラグメントの説明
 3. 結果
 
+<!-- textlint-disable -->
+
+サンプルコードは、[こちら](https://github.com/Silver-birder/Introduction_to_Micro_Frontends/tree/main/contents/tutorial/23_build_time_composition_tutorial/src/02_minimum_set/)。
+
+<!-- textlint-enable -->
+
 ## 組成 {#composite}
 
 team_composite/public/index.html

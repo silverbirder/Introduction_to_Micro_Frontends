@@ -3,7 +3,7 @@
 
 本章では、実際にマイクロフロントエンド設計を意識した開発をする。
 サンプルソースコードは、次のリポジトリにある。
-[micro-frontends-sample-codes](https://github.com/Silver-birder/micro-frontends-sample-codes)
+[Introduction_to_Micro_Frontends/contents/tutorial](https://github.com/Silver-birder/Introduction_to_Micro_Frontends/tree/main/contents/tutorial)
 
 * [クライアント組成](./21_client_side_composition_tutorial/01_overview.html)
 * [サーバーサイド組成](./22_server_side_composition_tutorial/01_overview.html)
