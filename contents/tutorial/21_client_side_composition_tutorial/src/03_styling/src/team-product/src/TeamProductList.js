@@ -6,6 +6,7 @@ export class TeamProductList extends LitElement {
       team-product-item {
         margin: 10px 0;
         display: block;
+        width: 90%;
       }
     `;
   }

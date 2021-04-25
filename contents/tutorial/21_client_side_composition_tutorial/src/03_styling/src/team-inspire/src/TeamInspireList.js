@@ -23,7 +23,7 @@ export class TeamInspireList extends LitElement {
 
   render() {
     return html`
-      <div>Recommended <br>for you</div>
+      <slot></slot>
       ${this.items.map(item => {
         return html`<team-inspire-item .name=${item}></team-inspire-item>`;
       })}

@@ -7,20 +7,24 @@
   <title>team-composite</title>
 </head>
 <style>
+  #id {
+    margin: 5%;
+  }
+  .wrapper {
+    display: grid;
+  }
   team-search-box {
     border: medium dotted red;
   }
   team-product-list {
     border: medium dotted blue;
-    display: table;
-    width: 167px;
   }
   team-inspire-list {
     border: medium dotted green;
-    position: absolute;
-    left: 200px;
-    top: 8px;
-    height: 183px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 </style>
 <body>
@@ -31,11 +35,16 @@
     import './search/team-search.js';
     import './product/team-product.js';
     const items = ['Product1', 'Product2'];
+    const recommend = ['Product3', 'Product4']
     render(
       html`
-        <team-search-box></team-search-box>
-        <team-product-list .items=${items}></team-product-list>
-        <team-inspire-list .items=${items}></team-inspire-list>
+        <div class="wrapper">
+          <team-search-box></team-search-box>
+          <team-product-list .items=${items}></team-product-list>
+          <team-inspire-list .items=${recommend}>
+            <team-inspire-label></team-inspire-label>
+          </team-inspire-list>
+        </div>
       `,
       document.querySelector('#root')
     );

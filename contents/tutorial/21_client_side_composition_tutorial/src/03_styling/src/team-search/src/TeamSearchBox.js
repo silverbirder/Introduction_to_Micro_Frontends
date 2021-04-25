@@ -7,6 +7,9 @@ export class TeamSearchBox extends LitElement {
         border: none;
         background-color: inherit;
       }
+      input {
+        width: 50%;
+      }
     `;
   }
   render() {

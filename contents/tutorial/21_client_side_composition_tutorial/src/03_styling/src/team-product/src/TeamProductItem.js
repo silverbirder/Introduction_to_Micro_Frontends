@@ -8,6 +8,7 @@ export class TeamProductItem extends LitElement {
         display: inline-block;
         text-align: center;
         padding: 20px 0;
+        width: 100%;
       }
     `;
   }
