@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-inspire
+  labels:
+    app: team-inspire
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: team-inspire
+  template:
+    metadata:
+      labels:
+        app: team-inspire
+    spec:
+      containers:
+        - name: team-inspire
+          image: team-inspire:v1
+          env:
+            - name: PORT
+              value: "4000"
+          ports:
+            - containerPort: 4000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: team-inspire
+  labels:
+    app: team-inspire
+spec:
+  selector:
+    app: team-inspire
+  ports:
+    - port: 4000
+      protocol: TCP
+      nodePort: 30004
+  type: LoadBalancer

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>team-composite</title>
+</head>
+<style>
+  #id {
+    margin: 5%;
+  }
+  .wrapper {
+    display: grid;
+  }
+  team-search-box {
+    border: medium dotted red;
+  }
+  team-product-list {
+    border: medium dotted blue;
+  }
+  team-inspire-list {
+    border: medium dotted green;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+</style>
+<body>
+  <div id="root"></div>
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import './inspire/team-inspire.js';
+    import './search/team-search.js';
+    import './product/team-product.js';
+    const items = ['Product 1', 'Product 2', 'Product 3'];
+    const recommend = ['Product 4', 'Product 5', 'Product 6']
+    render(
+      html`
+        <div class="wrapper">
+          <team-search-box></team-search-box>
+          <team-product-list .items=${items}></team-product-list>
+          <team-inspire-list .items=${recommend}>
+            <team-inspire-label></team-inspire-label>
+          </team-inspire-list>
+        </div>
+      `,
+      document.querySelector('#root')
+    );
+    document
+    .querySelector('team-search-box')
+    .addEventListener('submit', (e) => {
+      document
+      .querySelector('team-product-list')
+      .dispatchEvent(new CustomEvent('update', e))
+      document
+      .querySelector('team-inspire-list')
+      .dispatchEvent(new CustomEvent('update', e))
+    });
+  </script>
+</body>
+</html>
