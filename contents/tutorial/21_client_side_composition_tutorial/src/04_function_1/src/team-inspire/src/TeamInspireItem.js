@@ -8,7 +8,7 @@ export class TeamInspireItem extends LitElement {
         display: inline-block;
         text-align: center;
         padding: 20px 0;
-        border-radius: 50%;
+        border-radius: 10%;
       }
     `;
   }

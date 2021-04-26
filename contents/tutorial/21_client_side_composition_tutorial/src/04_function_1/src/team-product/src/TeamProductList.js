@@ -1,5 +1,13 @@
 import { html, css, LitElement } from 'lit-element';
 
+const items = ['apple', 'banana', 'grapes', 'mango', 'orange'];
+const recommendItems = {
+  apple: [], 
+  banana: [], 
+  grapes: [], 
+  mango: [], 
+  orange: []
+}
 export class TeamProductList extends LitElement {
   static get styles() {
     return css`
@@ -19,7 +27,7 @@ export class TeamProductList extends LitElement {
 
   constructor() {
     super();
-    this.items = ['Product1'];
+    this.items = items;
     this.addEventListener('update', this._handleUpdate);
   }
 

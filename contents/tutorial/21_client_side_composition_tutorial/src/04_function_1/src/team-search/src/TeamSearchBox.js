@@ -1,5 +1,6 @@
 import { html, css, LitElement } from 'lit-element';
 
+const items = ['apple', 'banana', 'grapes', 'mango', 'orange'];
 export class TeamSearchBox extends LitElement {
   static get styles() {
     return css`
@@ -26,8 +27,13 @@ export class TeamSearchBox extends LitElement {
     this.inputValue = e.srcElement.value
   }
   submit() {
+    const filterItems = (arr, query) => {
+      return arr.filter(el => el.toLowerCase().indexOf(query.toLowerCase()) !== -1)
+    }
     this.dispatchEvent(new CustomEvent("submit", {
-      detail: { items: [this.inputValue] }
+      detail: {
+        items: filterItems(items, this.inputValue) 
+      }
     }));
   }
   render() {

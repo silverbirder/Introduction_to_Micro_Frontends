@@ -35,14 +35,12 @@
     import './search/team-search.js';
     import './product/team-product.js';
     import { EventBus } from './src/eventBus.js';
-    const items = ['Product 1', 'Product 2', 'Product 3'];
-    const recommend = ['Product 4', 'Product 5', 'Product 6']
     render(
       html`
         <div class="wrapper">
           <team-search-box></team-search-box>
-          <team-product-list .items=${items}></team-product-list>
-          <team-inspire-list .items=${recommend}>
+          <team-product-list></team-product-list>
+          <team-inspire-list>
             <team-inspire-label></team-inspire-label>
           </team-inspire-list>
         </div>

@@ -1,5 +1,12 @@
 import { html, css, LitElement } from 'lit-element';
 
+const recommendItems = {
+  apple: ['apple pie'], 
+  banana: ['banana juice'], 
+  grapes: ['grape mousse'], 
+  mango: ['mango ice'], 
+  orange: ['orange cake']
+}
 export class TeamInspireList extends LitElement {
   static get styles() {
     return css`
@@ -18,12 +25,12 @@ export class TeamInspireList extends LitElement {
 
   constructor() {
     super();
-    this.items = ['Product1'];
+    this.items = Object.keys(recommendItems).map((key) => recommendItems[key]).flat();
     this.addEventListener('update', this._handleUpdate);
   }
 
   _handleUpdate(e) {
-    this.items = e.detail.items;
+    this.items = e.detail.items.map((item) => recommendItems[item]).flat();
   }
 
   render() {
