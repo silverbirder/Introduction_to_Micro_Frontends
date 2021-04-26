@@ -34,6 +34,7 @@
     import './inspire/team-inspire.js';
     import './search/team-search.js';
     import './product/team-product.js';
+    import { EventBus } from './src/eventBus.js';
     const items = ['Product 1', 'Product 2', 'Product 3'];
     const recommend = ['Product 4', 'Product 5', 'Product 6']
     render(
@@ -48,16 +49,7 @@
       `,
       document.querySelector('#root')
     );
-    document
-    .querySelector('team-search-box')
-    .addEventListener('submit', (e) => {
-      document
-      .querySelector('team-product-list')
-      .dispatchEvent(new CustomEvent('update', e))
-      document
-      .querySelector('team-inspire-list')
-      .dispatchEvent(new CustomEvent('update', e))
-    });
+    new EventBus().dispatch();
   </script>
 </body>
 </html>
