@@ -1,13 +1,6 @@
 import { html, css, LitElement } from 'lit-element';
 
 const items = ['apple', 'banana', 'grapes', 'mango', 'orange'];
-const recommendItems = {
-  apple: [], 
-  banana: [], 
-  grapes: [], 
-  mango: [], 
-  orange: []
-}
 export class TeamProductList extends LitElement {
   static get styles() {
     return css`
