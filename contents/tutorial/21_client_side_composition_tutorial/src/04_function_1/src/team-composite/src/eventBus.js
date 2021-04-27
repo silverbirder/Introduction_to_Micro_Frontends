@@ -1,5 +1,5 @@
 export class EventBus {
-    dispatch() {
+  　launch() {
         document
         .querySelector('team-search-box')
         .addEventListener('submit', (e) => {
