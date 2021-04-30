@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>team_composite</title>
+</head>
+<style>
+    body {
+      margin: 5%;
+    }
+    .wrapper {
+      display: grid;
+    }
+    .team-search-box {
+      border: medium dotted red;
+    }
+    .team-product-list {
+      border: medium dotted blue;
+    }
+    .team-inspire-list {
+      border: medium dotted green;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  </style>
+<body>
+</body>
+  <div class="wrapper">
+      <div class="team-search-box">
+        <%- searchBox %>
+      </div>
+      <div class="team-product-list">
+        <%- productList %>
+      </div>
+      <div class="team-inspire-list">
+        <%- inspireList %>
+      </div>
+  </div>
+</html>
