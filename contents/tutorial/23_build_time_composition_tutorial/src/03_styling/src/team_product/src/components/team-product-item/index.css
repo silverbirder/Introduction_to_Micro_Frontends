@@ -1,0 +1,8 @@
+.item {
+    border: medium solid;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+    margin: 10px 0;
+    width: 90%;
+}
