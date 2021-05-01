@@ -5,7 +5,7 @@ export default class TeamSearchBox extends Component {
     render() {
         return (
             <div>
-                <input placeholder="Please enter keywords ..."></input><button>🔍</button>
+                <input class="team-search-box-input" placeholder="Please enter keywords ..."></input><button class="team-search-box-button">🔍</button>
             </div>
         );
     }

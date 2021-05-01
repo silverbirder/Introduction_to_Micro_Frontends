@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bit/silver-birder.micro-frontends-sample-collections.team-inspire-text": "0.0.1",
-    "@bit/silver-birder.micro-frontends-sample-collections.team-product-text": "0.0.1",
-    "@bit/silver-birder.micro-frontends-sample-collections.team-search-text": "0.0.1",
+    "@bit/silver-birder.micro-frontends-sample-collections.team-inspire-label": "0.0.2",
+    "@bit/silver-birder.micro-frontends-sample-collections.team-inspire-list": "0.0.4",
+    "@bit/silver-birder.micro-frontends-sample-collections.team-product-list": "0.0.3",
+    "@bit/silver-birder.micro-frontends-sample-collections.team-search-box": "0.0.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",

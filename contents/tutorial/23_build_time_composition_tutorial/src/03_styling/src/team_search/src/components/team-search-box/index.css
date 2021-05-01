@@ -1,7 +1,7 @@
-button {
+.team-search-box-button {
     border: none;
     background-color: inherit;
 }
-input {
+.team-search-box-input {
     width: 50%;
 }
