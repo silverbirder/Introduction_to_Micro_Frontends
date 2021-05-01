@@ -50,6 +50,7 @@
     * [機能拡張v1](contents/tutorial/22_server_side_composition_tutorial/04_function_1.md)
   * [ビルドタイム組成](contents/tutorial/23_build_time_composition_tutorial/01_overview.md)
     * [最小構成](contents/tutorial/23_build_time_composition_tutorial/02_minimum_set.md)
+    * [スタイリング](contents/tutorial/23_build_time_composition_tutorial/03_styling.md)
 
 ## 結文 {#post}
 
