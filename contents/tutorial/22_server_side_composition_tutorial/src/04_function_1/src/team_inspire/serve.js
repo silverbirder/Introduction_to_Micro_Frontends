@@ -20,6 +20,10 @@ app.get('/inspire-list', (req, res) => {
   res.render('./inspire-list.ejs', query);
 })
 
+app.get('/inspire-label', (req, res) => {
+  res.render('./inspire-label.ejs');
+})
+
 app.listen(port, () => {
   console.log(`Team Inspire app listening at http://localhost:${port}`)
 })

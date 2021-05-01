@@ -22,10 +22,12 @@ app.get('/',  async (req, res) => {
   }
   urlQueryParams = Object.keys(queryParams).map(key => key + '=' + queryParams[key]).join('&');
   const inspireList = await (await fetch(`http://${inspireHost}/inspire-list?i=${localItems.join(',')}`)).text();
+  const inspireLabel = await (await fetch(`http://${inspireHost}/inspire-label`)).text();
   const productList = await (await fetch(`http://${productHost}/product-list?i=${localItems.join(',')}`)).text();
   const searchBox = await (await fetch(`http://${searchHost}/search-box?${urlQueryParams}`)).text();
   res.render("./index.ejs", {
     inspireList: inspireList,
+    inspireLabel: inspireLabel,
     productList: productList,
     searchBox: searchBox
   });

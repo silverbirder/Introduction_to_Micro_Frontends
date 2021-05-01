@@ -10,10 +10,12 @@ const searchHost = process.env.SEARCH_HOST || 'localhost:6000';
 
 app.get('/',  async (req, res) => {
   const inspireList = await (await fetch(`http://${inspireHost}/inspire-list`)).text();
+  const inspireLabel = await (await fetch(`http://${inspireHost}/inspire-label`)).text();
   const productList = await (await fetch(`http://${productHost}/product-list`)).text();
   const searchBox = await (await fetch(`http://${searchHost}/search-box`)).text();
   res.render("./index.ejs", {
     inspireList: inspireList,
+    inspireLabel: inspireLabel,
     productList: productList,
     searchBox: searchBox
   });
