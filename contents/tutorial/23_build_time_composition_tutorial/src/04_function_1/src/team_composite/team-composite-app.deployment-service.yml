@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-composite-app
+  labels:
+    app: team-composite-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: team-composite-app
+  template:
+    metadata:
+      labels:
+        app: team-composite-app
+    spec:
+      containers:
+        - name: team-composite-app
+          image: team-composite-app:v1
+          env:
+            - name: PORT
+              value: "3000"
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: team-composite-app
+  labels:
+    app: team-composite-app
+spec:
+  selector:
+    app: team-composite-app
+  ports:
+    - port: 3000
+      protocol: TCP
+      nodePort: 30003
+  type: LoadBalancer
