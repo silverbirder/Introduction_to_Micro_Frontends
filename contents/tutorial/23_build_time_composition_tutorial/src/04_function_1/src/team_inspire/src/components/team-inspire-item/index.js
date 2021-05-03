@@ -4,7 +4,7 @@ import './index.css';
 export default class TeamInspireItem extends Component {
     render() {
         return (
-            <div class="team-inspire-item">
+            <div className="team-inspire-item">
                 {this.props.name}
             </div>
         );

@@ -6,7 +6,7 @@ export default class TeamProductList extends Component {
         return (
             <div>
                 {this.props.items.map((item) => {
-                    return <TeamProductItem name={item} class="item"></TeamProductItem>;
+                    return <TeamProductItem key={item} name={item} className="item"></TeamProductItem>;
                 })}
             </div>
         );

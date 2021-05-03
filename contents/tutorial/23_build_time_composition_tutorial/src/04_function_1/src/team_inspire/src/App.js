@@ -8,7 +8,7 @@ function App() {
     <>
       <TeamInspireText/>
       <TeamInspireLabel/>
-      <TeamInspireList items={["Product 1", "Product 2", "Product 3"]}/>
+      <TeamInspireList items={['apple', 'banana', 'grapes', 'mango', 'orange']}/>
     </>
   );
 }

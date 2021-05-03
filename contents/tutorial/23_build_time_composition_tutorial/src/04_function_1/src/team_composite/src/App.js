@@ -10,7 +10,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       productItems: ['apple', 'banana', 'grapes', 'mango', 'orange'],
-      inspireItems: ["Product 4", "Product 5", "Product 6"]
+      inspireItems: ['apple', 'banana', 'grapes', 'mango', 'orange']
     }
   }
   componentDidMount() {
@@ -24,14 +24,14 @@ export default class App extends Component {
   }
   render() {
     return (
-      <div class="wrapper">
-          <div class="team-search-box">
+      <div className="wrapper">
+          <div className="team-search-box">
             <TeamSearchBox/>
           </div>
-          <div class="team-product-list">
+          <div className="team-product-list">
             <TeamProductList items={this.state.productItems}/>
           </div>
-          <div class="team-inspire-list">
+          <div className="team-inspire-list">
             <TeamInspireLabel/>
             <TeamInspireList items={this.state.inspireItems}/>
           </div>
